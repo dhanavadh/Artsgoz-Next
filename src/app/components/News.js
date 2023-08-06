@@ -160,7 +160,7 @@ const News = () => {
                                                                 
                                                             </p>
                                                             <h3 class="text-lg font-semibold text-gray-900 ">
-                                                                <a href="/reg" class="hover:underline">อ่านข่าวทั้งหมด</a>
+                                                                <a href="/reg" class="hover:underline">อ่านประชาสัมพันธ์ทั้งหมด</a>
                                                             </h3>
                                                             </div>
 

@@ -27,14 +27,14 @@ import '@/app/components/Navbar.css'
 import Link from 'next/link';
 
 const mainMenu = [
-    { name: 'หน้าแรก', description: 'คลิกที่นี่เพื่อไปที่หน้าหลัก', href: '' },
-    { name: 'วิชาการ', description: 'ดูบริการวิชาการทั้งหมดได้ที่นี่', href: '' },
-    { name: 'สวัสดิการ', description: 'สวัสดิการทั้งหมดสำหรับนิสิต', href: '' },
+    { name: 'หน้าแรก', description: 'คลิกที่นี่เพื่อไปที่หน้าหลัก', href: '/' },
+    { name: 'วิชาการ', description: 'ดูบริการวิชาการทั้งหมดได้ที่นี่', href: '/reg' },
+    { name: 'สวัสดิการ', description: 'สวัสดิการทั้งหมดสำหรับนิสิต', href: '/services' },
 ]
 const mainMenu1 = [
-    { name: 'กิจกรรม', description: 'กิจกรรมอยู่นี่เลย', href: '' },
-    { name: 'ช่วยเหลือ', description: 'สงสัย/ต้องการข้อมูล มาที่นี่เลย', href: '' },
-    { name: 'เกี่ยวกับเรา', description: 'ดูข้อมูลเกี่ยวกับ ก.อศ. ได้ที่นี่', href: '' },
+    { name: 'กิจกรรม', description: 'กิจกรรมอยู่นี่เลย', href: '/projects' },
+    { name: 'ช่วยเหลือ', description: 'สงสัย/ต้องการข้อมูล มาที่นี่เลย', href: 'support' },
+    { name: 'เกี่ยวกับเรา', description: 'ดูข้อมูลเกี่ยวกับ ก.อศ. ได้ที่นี่', href: '/about' },
 ]
 const readings = [
     { name: 'ข่าวประชาสัมพันธ์', description: 'ดูข่าวประชาสัมพันธ์ทั้งหมดได้ที่นี่', href: '/services/review', target: '', icon: PencilIcon },
