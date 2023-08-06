@@ -23,6 +23,12 @@
       "static/chunks/main-app.js",
       "static/css/app/login/page.css",
       "static/chunks/app/login/page.js"
+    ],
+    "/reg/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/reg/page.css",
+      "static/chunks/app/reg/page.js"
     ]
   }
 }
