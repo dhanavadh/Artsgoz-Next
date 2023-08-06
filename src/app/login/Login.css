@@ -1,0 +1,30 @@
+.App-header {
+    background-color: #1F1F1F;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: #F8E1EA;
+  }
+::-moz-selection { /* Code for Firefox */
+  color: #F8E1EA;
+  background: #1F1F1F;
+  }
+  
+  ::selection {
+    color: #F8E1EA;
+    background: #1F1F1F;
+  }
+  .ssa {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    filter: grayscale(1) brightness(0.5);
+  }
