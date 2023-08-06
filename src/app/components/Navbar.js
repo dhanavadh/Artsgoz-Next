@@ -40,7 +40,7 @@ const readings = [
     { name: 'ข่าวประชาสัมพันธ์', description: 'ดูข่าวประชาสัมพันธ์ทั้งหมดได้ที่นี่', href: '/services/review', target: '', icon: PencilIcon },
     { name: 'งานทะเบียน', description: 'ดูข้อมูลเกี่ยวกับงานทะเบียนได้ที่นี่', href: '/reg', target: '', icon: PencilIcon },
     { name: 'รีวิวรายวิชา', description: 'อยากรู้วิชาไหนเป็นอย่างไร คลิกเลย', href: '/services/review', target: '', icon: PencilIcon },
-    { name: 'ค้นหาชื่ออาจารย์', description: 'ดูชื่อย่ออาจารย์ในคณะฯ ได้ที่นี่', href: 'https://www.arts.chula.ac.th/goz/dev/temptable', target: '', icon: MagnifyingGlassIcon },
+    { name: 'ค้นหาชื่ออาจารย์', description: 'ดูชื่อย่ออาจารย์ในคณะฯ ได้ที่นี่', href: '/services/staffquery', target: '', icon: MagnifyingGlassIcon },
     { name: 'ค้นหารายวิชาและอาจารย์ที่ปรึกษา สำหรับนิสิต ปี 1', description: 'สำหรับตรวจสอบข้อมูลลงทะเบียนเรียนของนิสิตปี 1', href: '/services/year1', target: '', icon: UserGroupIcon },
     { name: 'คำนวณ/คาดการณ์เกรด', description: 'เกรดรวมจะเป็นอย่างไร จะได้เข้าเอกไหม คำนวณได้ที่นี่', href: '/services/calc', target: '', icon: CalculatorIcon },
   ]
