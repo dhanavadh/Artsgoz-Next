@@ -51,13 +51,8 @@ function Search({ details }) {
 
 
     <div className='grid grid-cols-1'>
-                <div className="grid grid-cols-3 min-h-screen">
+                <div className="grid grid-cols-3 min-h-screen bg-[#1f1f1f]">
                     <div className="col-span-3">
-                      <img src='https://www.arts.chula.ac.th/goz/asset/banner/zXLYJSTzyFG5oRX88cPyMpavATWCM7ZN.jpg' className='ssa'>
-                      </img>
-                        {/* <video autoPlay loop muted className='ssa'> 
-                            <source src={Vid1} type='video/mp4'></source>
-                        </video> */}
                     </div>
                     <div className="col-span-3">
                         <div class="grid grid-rows-2 gap-2 mx-10">

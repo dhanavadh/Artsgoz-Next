@@ -71,35 +71,6 @@
   background-color: #fff;
 }
 
-#top-nav {
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  height: 60px;
-  width: 100%;
-}
-
-#side-nav {
-  width: 250px;
-  height:100vh;
-  left: 0;
-  right: 0;
-  overflow-y: scroll;
-  background-color: red;
-  top: 60px;
-}
-
-#content-wrapper {
-  margin: 60px 0 0 250px;
-  padding: 0 30px;
-  overflow-y: scroll;
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100vh;
-  background-color: blue;
-}
 .atb{
   background: transparent; border: 1px solid #ccc;
   width: 100%;

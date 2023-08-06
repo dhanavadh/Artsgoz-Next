@@ -1,0 +1,30 @@
+.App-header {
+    background-color: #F8E1EA;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: #1F1F1F;
+  }
+.App-header2 {
+background-color: #1F1F1F;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+font-size: calc(10px + 2vmin);
+color: #F8E1EA;
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: #1F1F1F;
+    background: #F8E1EA;
+  }
+  
+  ::selection {
+    color: #1F1F1F;
+    background: #F8E1EA;
+  }

@@ -38,35 +38,40 @@ const mainMenu1 = [
 ]
 const readings = [
     { name: 'ข่าวประชาสัมพันธ์', description: 'ดูข่าวประชาสัมพันธ์ทั้งหมดได้ที่นี่', href: '/services/review', target: '', icon: PencilIcon },
-    { name: 'งานทะเบียน', description: 'ดูข้อมูลเกี่ยวกับงานทะเบียนได้ที่นี่', href: '/services/review', target: '', icon: PencilIcon },
+    { name: 'งานทะเบียน', description: 'ดูข้อมูลเกี่ยวกับงานทะเบียนได้ที่นี่', href: '/reg', target: '', icon: PencilIcon },
     { name: 'รีวิวรายวิชา', description: 'อยากรู้วิชาไหนเป็นอย่างไร คลิกเลย', href: '/services/review', target: '', icon: PencilIcon },
     { name: 'ค้นหาชื่ออาจารย์', description: 'ดูชื่อย่ออาจารย์ในคณะฯ ได้ที่นี่', href: 'https://www.arts.chula.ac.th/goz/dev/temptable', target: '', icon: MagnifyingGlassIcon },
     { name: 'ค้นหารายวิชาและอาจารย์ที่ปรึกษา สำหรับนิสิต ปี 1', description: 'สำหรับตรวจสอบข้อมูลลงทะเบียนเรียนของนิสิตปี 1', href: '/services/year1', target: '', icon: UserGroupIcon },
     { name: 'คำนวณ/คาดการณ์เกรด', description: 'เกรดรวมจะเป็นอย่างไร จะได้เข้าเอกไหม คำนวณได้ที่นี่', href: '/services/calc', target: '', icon: CalculatorIcon },
   ]
   const rcallsAct = [
-    { name: 'ดูบทความทั้งหมด', href: '/topics', icon: ArrowLongRightIcon },
+    { name: 'ดูบริการวิชาการทั้งหมด', href: '/topics', icon: ArrowLongRightIcon },
   ]
 
   const tools = [
     
-    { name: 'สวัสดิการโดย ก.อศ.', description: 'เป็นนิสิตอักษรฯ ได้อะไรบ้าง?', href: '/benefit', target: '', icon: SparklesIcon },
-    { name: 'Arts Repository (ใช้ ArtsID)', description: 'อยากได้ไฟล์ไหน ค้นหาได้ที่นี่เลย', href: '/repos', target: '', icon: ArchiveBoxIcon },
+    { name: 'สวัสดิการสำหรับนิสิต', description: 'เป็นนิสิตอักษรฯ ได้อะไรบ้าง?', href: '/benefit', target: '', icon: SparklesIcon },
+    { name: 'ฝากประชาสัมพันธ์ อบจ.', description: 'สำหรับฝากประชาสัมพันธ์ อบจ.', href: '/cusgform', target: '', icon: SparklesIcon },
+    
     
   ]
   const toolsAll = [
-    { name: 'ดูบริการทั้งหมด', href: '/services', icon: ArrowLongRightIcon },
+    { name: 'ดูสวัสดิการทั้งหมด', href: '/services', icon: ArrowLongRightIcon },
   ]
   const projectArts = [
     { name: 'Arts Podcast', description: 'รายการ Podcast จากก.อศ.', href: '/podcast', icon: MicrophoneIcon },
+    { name: 'บทความ', description: 'รวมบทความจากนิสิตมาไว้ที่นี่แล้ว', href: '/podcast', icon: MicrophoneIcon },
+    { name: 'ชมรม', description: 'อักษรฯ มีชมรมอะไรบ้าง ดูได้ที่นี่เลย', href: '/podcast', icon: MicrophoneIcon },
+    { name: 'ผลงานนิสิต', description: 'ผลงานทั้งหมดของนิสิตอักษร ฯ', href: '/podcast', icon: MicrophoneIcon },
   ]
   const projectAll = [
-    { name: 'ดูโครงการทั้งหมด', href: '/projects', icon: ArrowLongRightIcon },
+    { name: 'ดูกิจกรรมทั้งหมด', href: '/projects', icon: ArrowLongRightIcon },
   ]
   const clubs = [
     { name: 'Artstreet', description: 'รอคำอธิบายขนาดย่อม', href: '/clubs/artstreet', icon: PencilIcon },
     { name: 'Artsting', description: 'รอคำอธิบายขนาดย่อม', href: '/clubs/artsting', icon: MagnifyingGlassIcon },
     { name: 'Artsband', description: 'รอคำอธิบายขนาดย่อม', href: '/clubs/artsband', icon: UserGroupIcon },
+    { name: 'Arts Repository (ใช้ ArtsID)', description: 'อยากได้ไฟล์ไหน ค้นหาได้ที่นี่เลย', href: '/repos', target: '', icon: ArchiveBoxIcon },
   ]
   const clubsAll = [
     { name: 'ดูชมรมทั้งหมด', href: '/club', icon: ArrowLongRightIcon },
@@ -83,13 +88,12 @@ const readings = [
     { name: 'ดูข้อมูลทั้งหมด', href: '/support', icon: ArrowLongRightIcon },
   ]
   const about = [
-    { name: 'คณะกรรมการและสมาชิก', description: 'ก.อศ. 66 มีใครบ้าง ดูได้ที่นี่เลย', href: '/about/us', icon: UserGroupIcon },
-    { name: 'หน่วยงานใน ก.อศ.', description: 'ก.อศ. มีกี่ฝ่าย ดูได้ที่นี่', href: '/about/dept', icon: BuildingOfficeIcon },
+    { name: 'คณะกรรมการนิสิตอักษรศาสตร์ (ก.อศ.)', description: 'ดูข้อมูลเกี่ยวกับเราเพิ่มเติม', href: '/about/us', icon: UserGroupIcon },
+    { name: 'ทำเนียบประธานฝ่าย และช่องทางการติดต่อ', description: 'ก.อศ. 66 มีใครบ้าง ดูได้ที่นี่เลย', href: '/about/us', icon: UserGroupIcon },
     { name: 'โครงการ', description: 'โครงการทั้งหมดจาก ก.อศ. 66', href: '/about/projects', icon: BriefcaseIcon },
-    { name: 'ความโปร่งใส', description: 'ตรวจสอบความโปร่งใสขององค์กรได้ที่นี่', href: '/about/transparency', icon: ShieldCheckIcon },
     { name: 'ติดต่อเรา', description: 'ข้อมูลติดต่อกับก.อศ.', href: '/about/connect', icon: QuestionMarkCircleIcon },
     { name: 'งานประชาสัมพันธ์ ก.อศ.', description: 'ติดตาม/ขอลงงานประชาสัมพันธ์ได้ที่นี่', href: 'https://www.arts.chula.ac.th/goz/dev/atb/', icon: MegaphoneIcon },
-    { name: 'ArtsLabs', description: 'ArtsLabs Repositories', href: '/artslabs', icon: CommandLineIcon },
+    { name: 'ดาวน์โหลดข้อมูล', description: 'สามารถดาวน์โหลดเอกสาร ฟอร์ม และตราสัญลักษณ์องค์กรได้ที่นี่', href: '/artslabs', icon: CommandLineIcon },
   ]
   const aboutAll = [
     { name: 'เข้าสู่ระบบ สำหรับ ก.อศ.', href: '/login', icon: ArrowLongRightIcon },
@@ -138,6 +142,16 @@ function Navbar() {
   
     function openModal1() {
         setIsStart(true)
+    }
+    //MoError
+    let [isError, setIsError] = useState(false)
+  
+    function closeError() {
+        setIsError(false)
+    }
+  
+    function openError() {
+        setIsError(true)
     }
     //NavCo
     const [color, setColor ] = useState(false);
@@ -562,9 +576,9 @@ function Navbar() {
                 </div>
                 <div className='m-5 flex items-center justify-center'>
                   <a className='flex px-4 py-2 mx-2 text-sm font-medium border-2 btn-active underline-thickness-1 hover:underline hover:bg-[#1F1F1F] hover:text-[#F2F2F2]
-                    cursor-pointer transition-colors duration-300'>เข้าสู่ระบบ</a>
+                    cursor-pointer transition-colors duration-300' onClick={openError}>เข้าสู่ระบบ</a>
                     <a className='flex px-4 py-2 mx-2 text-sm font-medium border-2 btn-active underline-thickness-1 hover:underline hover:bg-[#1F1F1F] hover:text-[#F2F2F2]
-                    cursor-pointer transition-colors duration-300'>ลืมรหัสผ่าน
+                    cursor-pointer transition-colors duration-300' href='https://airtable.com/shrjJycDMqOzuxShq' target='_blank'>ลืมรหัสผ่าน
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-5 h-5 ml-1">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
                         </svg>
@@ -694,6 +708,60 @@ function Navbar() {
                     </div>
                 </div>
                   </Dialog.Panel>
+                </Transition.Child>
+              </div>
+            </div>
+          </Dialog>
+        </Transition>
+
+        <Transition appear show={isError} as={Fragment}>
+          <Dialog as="div" className="relative z-10" onClose={closeError}>
+            <Transition.Child
+              as={Fragment}
+              enter="ease-out duration-300"
+              enterFrom="opacity-0"
+              enterTo="opacity-100"
+              leave="ease-in duration-200"
+              leaveFrom="opacity-100"
+              leaveTo="opacity-0"
+            >
+              <div className="fixed inset-0 bg-black bg-opacity-25" />
+            </Transition.Child>
+            <div className="fixed inset-0 overflow-y-auto">
+              <div className="flex min-h-full items-center justify-center p-4 text-center">
+                <Transition.Child
+                  as={Fragment}
+                  enter="ease-out duration-300"
+                  enterFrom="opacity-0 scale-95"
+                  enterTo="opacity-100 scale-100"
+                  leave="ease-in duration-200"
+                  leaveFrom="opacity-100 scale-100"
+                  leaveTo="opacity-0 scale-95"
+                >
+                 <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded bg-white p-6 text-left align-middle shadow-xl transition-all">
+                  <Dialog.Title
+                    as="h3"
+                    className="text-lg font-medium leading-6 text-gray-900"
+                  >
+                    เนื้อหานี้ยังไม่เปิดใช้งาน
+                  </Dialog.Title>
+                  <div className="mt-2">
+                    <p className="text-sm text-gray-500">
+                      ขออภัยในความไม่สะดวก หน้าที่คุณกำลังจะไปยังไม่เปิดใช้งานสำหรับบุคคลทั่วไป
+                    </p>
+                  </div>
+
+                  <div className="mt-4">
+                    <button
+                      type="button"
+                      className="flex px-4 py-2 text-sm font-medium border-2 btn-active underline-thickness-1 hover:underline hover:bg-[#1F1F1F] hover:text-[#F2F2F2]
+                      cursor-pointer transition-colors duration-300"
+                      onClick={closeError}
+                    >
+                      ปิด
+                    </button>
+                  </div>
+                </Dialog.Panel>
                 </Transition.Child>
               </div>
             </div>

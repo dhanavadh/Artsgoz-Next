@@ -11,14 +11,15 @@ const gozlink = [
     { name: 'เอกสาร/แบบฟอร์ม', href: '/about/docs', target: '' },
 ]
 const prlink = [
-    { name: 'ตารางงานประชาสัมพันธ์ทั้งหมด', href: '/pr/time', target: '' },
-    { name: 'ติดต่อขอลงงานประชาสัมพันธ์', href: '/pr/regis', target: '' },
+    { name: 'ตารางงานประชาสัมพันธ์ทั้งหมด', href: 'https://airtable.com/appL41ESosi23CmVb/shrbDR35qe9WQfRP5', target: '_blank' },
+    { name: 'ติดต่อขอลงงานประชาสัมพันธ์', href: 'https://airtable.com/appL41ESosi23CmVb/shrOw4kbtV4ghnpRW', target: '_blank' },
     { name: 'ตราสัญลักษณ์องค์กร', href: '/about/asset', target: '' },
     { name: 'Asset งานประชาสัมพันธ์', href: '/about/asset', target: '' },
 ]
 const servlink = [
+    { name: 'งานทะเบียน', href: '/reg', target: '' },
     { name: 'สวัสดิการทั้งหมด', href: '/benefit', target: '' },
-    { name: 'ค้นหาชื่ออาจารย์', href: '/service/search', target: '' },
+    { name: 'ค้นหาชื่ออาจารย์', href: '/services/staffquery', target: '' },
     { name: 'คำนวณเกรด', href: '/service/calc', target: '' },
     { name: 'คลังข้อมูลสำหรับนิสิต', href: '/service/asset', target: '' },
     { name: 'ตรวจสอบรายวิชาและอาจารย์ที่ปรึกษา', href: '/service/query/ttb', target: '' },
@@ -126,7 +127,7 @@ function Footer() {
                                 <nav class="mb-5 list-none">
                                     {prlink.map((item) => (
                                         <li class="mt-3">
-                                            <Link class={unb} href={item.href}>{item.name}</Link>
+                                            <Link class={unb} href={item.href} target={item.target}>{item.name} </Link>
                                         </li>
                                     ))}
                                 </nav>
