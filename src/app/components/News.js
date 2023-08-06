@@ -79,20 +79,7 @@ const News = () => {
                         </div>
                     </div>
                     <div className='flex col-span-11'>                        
-                        <div className='grid grid-cols-2 grid-rows-2 '>
-                            <div className='grid'>
-                                Test
-                            </div>
-                            <div className='grid'>
-                                Test
-                            </div>
-                            <div className='grid'>
-                                Test
-                            </div>
-                            <div className='grid'>
-                                Test
-                            </div>
-                        </div>                 
+                                        
                     </div>
                     
                 </div>            

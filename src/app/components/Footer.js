@@ -1,58 +1,57 @@
 'use client'
 import {React, Fragment, useState} from 'react';
 import { Dialog, Transition, Popover } from '@headlessui/react'
-import Link from 'next/link';
 
 const gozlink = [
-    { name: 'คณะกรรมการและสมาชิก', href: '/about', target: '' },
-    { name: 'หน่วยงานในสังกัด ก.อศ.', href: '/about/dept', target: '' },
-    { name: 'การบริหารงานและความโปร่งใส', href: '/about/transparency', target: '' },
-    { name: 'ช่องทางการติดต่อ', href: '/about/connect', target: '' },
-    { name: 'เอกสาร/แบบฟอร์ม', href: '/about/docs', target: '' },
+    { name: 'คณะกรรมการและสมาชิก', href: '/goz/dev/webkit/ss1/about', target: '', onc: 'openError' },
+    { name: 'หน่วยงานในสังกัด ก.อศ.', href: '/goz/dev/webkit/ss1/about/dept', target: '' },
+    { name: 'การบริหารงานและความโปร่งใส', href: '/goz/dev/webkit/ss1/about/transparency', target: '', onc: 'openError' },
+    { name: 'ช่องทางการติดต่อ', href: '/goz/dev/webkit/ss1/about/connect', target: '', onc: 'openError' },
+    { name: 'เอกสาร/แบบฟอร์ม', href: '/goz/dev/webkit/ss1/about/docs', target: '', onc: 'openError' },
 ]
 const prlink = [
-    { name: 'ตารางงานประชาสัมพันธ์ทั้งหมด', href: '/pr/time', target: '' },
-    { name: 'ติดต่อขอลงงานประชาสัมพันธ์', href: '/pr/regis', target: '' },
-    { name: 'ตราสัญลักษณ์องค์กร', href: '/about/asset', target: '' },
-    { name: 'Asset งานประชาสัมพันธ์', href: '/about/asset', target: '' },
+    { name: 'ตารางงานประชาสัมพันธ์ทั้งหมด', href: '/goz/dev/webkit/ss1/pr/time', target: '', onc: 'openError' },
+    { name: 'ติดต่อขอลงงานประชาสัมพันธ์', href: '/goz/dev/webkit/ss1/pr/regis', target: '', onc: 'openError' },
+    { name: 'ตราสัญลักษณ์องค์กร', href: '/goz/dev/webkit/ss1/about/asset', target: '', onc: 'openError' },
+    { name: 'Asset งานประชาสัมพันธ์', href: '/goz/dev/webkit/ss1/about/asset', target: '', onc: 'openError' },
 ]
 const servlink = [
-    { name: 'สวัสดิการทั้งหมด', href: '/benefit', target: '' },
-    { name: 'ค้นหาชื่ออาจารย์', href: '/service/search', target: '' },
-    { name: 'คำนวณเกรด', href: '/service/calc', target: '' },
-    { name: 'คลังข้อมูลสำหรับนิสิต', href: '/service/asset', target: '' },
-    { name: 'ตรวจสอบรายวิชาและอาจารย์ที่ปรึกษา', href: '/service/query/ttb', target: '' },
-    { name: 'ตรวจสอบผลการสมัครกิจกรรมต่าง ๆ', href: '/service/query/activity', target: '' },
-    { name: 'ตรวจสอบผลการคัดเลือกเอก', href: '/service/query/major', target: '' },
-    { name: 'รีวิวรายวิชา', href: '/review/class', target: '' },
-    { name: 'รีวิวเอกในคณะ', href: '/review/major', target: '' },
-    { name: 'ArtsID', href: '/artsid', target: '' },
+    { name: 'สวัสดิการทั้งหมด', href: '/goz/dev/webkit/ss1/benefit', target: '', onc: 'openError' },
+    { name: 'ค้นหาชื่ออาจารย์', href: '/goz/dev/webkit/ss1/service/search', target: '' },
+    { name: 'คำนวณเกรด', href: '/goz/dev/webkit/ss1/service/calc', target: '', onc: 'openError' },
+    { name: 'คลังข้อมูลสำหรับนิสิต', href: '/goz/dev/webkit/ss1/service/asset', target: '', onc: 'openError' },
+    { name: 'ตรวจสอบรายวิชาและอาจารย์ที่ปรึกษา', href: '/goz/dev/webkit/ss1/service/query/ttb', target: '', onc: 'openError' },
+    { name: 'ตรวจสอบผลการสมัครกิจกรรมต่าง ๆ', href: '/goz/dev/webkit/ss1/service/query/activity', target: '', onc: 'openError' },
+    { name: 'ตรวจสอบผลการคัดเลือกเอก', href: '/goz/dev/webkit/ss1/service/query/major', target: '', onc: 'openError' },
+    { name: 'รีวิวรายวิชา', href: '/goz/dev/webkit/ss1/review/class', target: '', onc: 'openError' },
+    { name: 'รีวิวเอกในคณะ', href: '/goz/dev/webkit/ss1/review/major', target: '', onc: 'openError' },
+    { name: 'ArtsID', href: '/goz/dev/webkit/ss1/artsid', target: '', onc: 'openError' },
 ]
 const actlink = [
-    { name: 'ข่าวสาร/กิจกรรม', href: '/activity', target: '' },
-    { name: 'บทความ', href: '/topic', target: '' },
-    { name: 'ชมรม', href: '/club', target: '' },
-    { name: 'Arts Podcast', href: '/activity/podcast', target: '' },
+    { name: 'ข่าวสาร/กิจกรรม', href: '/goz/dev/webkit/ss1/activity', target: '', onc: 'openError' },
+    { name: 'บทความ', href: '/goz/dev/webkit/ss1/topic', target: '', onc: 'openError' },
+    { name: 'ชมรม', href: '/goz/dev/webkit/ss1/club', target: '', onc: 'openError' },
+    { name: 'Arts Podcast', href: '/goz/dev/webkit/ss1/activity/podcast', target: '', onc: 'openError' },
 ]
 const supportlink = [
-    { name: 'คำถามที่พบบ่อย', href: '/support/faq', target: '' },
-    { name: 'ร้องเรียนปัญหาต่าง ๆ', href: '/support/report', target: '' },
-    { name: 'ข้อเสนอแนะ/ความคิดเห็น', href: '/support/feedback', target: '' },
-    { name: 'ตรวจสอบเรื่องที่ร้องเรียน', href: '/support/ticketchecker', target: '' },
+    { name: 'คำถามที่พบบ่อย', href: '/goz/dev/webkit/ss1/support/faq', target: '', onc: 'openError' },
+    { name: 'ร้องเรียนปัญหาต่าง ๆ', href: '/goz/dev/webkit/ss1/support/report', target: '', onc: 'openError' },
+    { name: 'ข้อเสนอแนะ/ความคิดเห็น', href: '/goz/dev/webkit/ss1/support/feedback', target: '', onc: 'openError' },
+    { name: 'ตรวจสอบเรื่องที่ร้องเรียน', href: '/goz/dev/webkit/ss1/support/ticketchecker', target: '', onc: 'openError' },
 ]
 const aboutlink = [
-    { name: 'นโยบายความเป็นส่วนตัว', href: '/support/privacy', target: '' },
-    { name: 'ข้อกำหนดการใช้งาน', href: '/support/terms', target: '' },
-    { name: 'ArtsLabs', href: '/artslabs', target: '' },
-    { name: 'คลังข้อมูล', href: '/about/asset', target: '' },
-    { name: 'โครงสร้างเว็บไซต์', href: '/support/sitemap', target: '' },
+    { name: 'นโยบายความเป็นส่วนตัว', href: '/goz/dev/webkit/ss1/support/privacy', target: '', onc: 'openError' },
+    { name: 'ข้อกำหนดการใช้งาน', href: '/goz/dev/webkit/ss1/support/terms', target: '', onc: 'openError' },
+    { name: 'ArtsLabs', href: '/goz/dev/webkit/ss1/artslabs', target: '', onc: 'openError' },
+    { name: 'คลังข้อมูล', href: '/goz/dev/webkit/ss1/about/asset', target: '', onc: 'openError' },
+    { name: 'โครงสร้างเว็บไซต์', href: '/goz/dev/webkit/ss1/support/sitemap', target: '', onc: 'openError' },
 ]
 const weblink = [
-    { name: 'GOZ Portal', href: '/login', target: '' },
-    { name: 'PR Portal', href: '/login', target: '' },
-    { name: 'Knowledge Management', href: '/ids/ikm', target: '' },
-    { name: 'Helpdesk Support', href: '/support/helpdesk', target: '' },
-    { name: 'WebKit', href: '/login', target: '' },
+    { name: 'GOZ Portal', href: '/goz/dev/webkit/ss1/login', target: '', onc: 'openError' },
+    { name: 'PR Portal', href: '/goz/dev/webkit/ss1/login', target: '', onc: 'openError' },
+    { name: 'Knowledge Management', href: '/goz/dev/webkit/ss1/ids/ikm', target: '', onc: 'openError' },
+    { name: 'Helpdesk Support', href: '/goz/dev/webkit/ss1/support/helpdesk', target: '', onc: 'openError' },
+    { name: 'WebKit', href: '/goz/dev/webkit/ss1/login', target: '', onc: 'openError' },
 ]
 const unb = `underline-thickness-1 underline-offset-4 hover:underline cursor-pointer transition-colors duration-300`
 const hds = `mb-3 text-md text-[#1F1F1F] font-bold  title-font`
@@ -66,9 +65,18 @@ function Footer() {
     function openModal() {
       setIsOpen(true)
     }
+    let [isError, setIsError] = useState(false)
+  
+    function closeError() {
+        setIsError(false)
+    }
+  
+    function openError() {
+        setIsError(true)
+    }
     return (
         <div>
-            <div class="flex items-end w-full">
+            <div class="flex items-end w-full mt-32">
                 <footer class="w-full text-gray-700 bg-[#F2F2F2] body-font">
                     <div
                         class="container flex flex-col flex-wrap px-5 py-24 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap">
@@ -118,7 +126,7 @@ function Footer() {
                                 <nav class="mb-5 list-none">
                                     {gozlink.map((item) => (
                                         <li class="mt-3">
-                                            <Link class={unb} href={item.href}>{item.name}</Link>
+                                            <a class={unb} onClick={openError}>{item.name}</a>
                                         </li>
                                     ))}
                                 </nav>
@@ -126,7 +134,7 @@ function Footer() {
                                 <nav class="mb-5 list-none">
                                     {prlink.map((item) => (
                                         <li class="mt-3">
-                                            <Link class={unb} href={item.href}>{item.name}</Link>
+                                            <a class={unb} onClick={openError}>{item.name}</a>
                                         </li>
                                     ))}
                                 </nav>
@@ -136,7 +144,7 @@ function Footer() {
                                 <nav class="mb-5 list-none">
                                     {servlink.map((item) => (
                                         <li class="mt-3">
-                                            <Link class={unb} href={item.href}>{item.name}</Link>
+                                            <a class={unb} onClick={openError}>{item.name}</a>
                                         </li>
                                     ))}
                                 </nav>
@@ -147,7 +155,7 @@ function Footer() {
                                 <nav class="mb-5 list-none">
                                     {actlink.map((item) => (
                                         <li class="mt-3">
-                                            <Link class={unb} href={item.href}>{item.name}</Link>
+                                            <a class={unb} onClick={openError}>{item.name}</a>
                                         </li>
                                     ))}
                                 </nav>
@@ -155,7 +163,7 @@ function Footer() {
                                 <nav class="mb-5 list-none">
                                     {supportlink.map((item) => (
                                         <li class="mt-3">
-                                            <Link class={unb} href={item.href}>{item.name}</Link>
+                                            <a class={unb} onClick={openError}>{item.name}</a>
                                         </li>
                                     ))}                               
                                 </nav>
@@ -165,7 +173,7 @@ function Footer() {
                                 <div class="mb-5 list-none">
                                     {aboutlink.map((item) => (
                                         <li class="mt-3">
-                                            <Link class={unb} href={item.href}>{item.name}</Link>
+                                            <a class={unb} onClick={openError}>{item.name}</a>
                                         </li>
                                     ))}
                                 </div>
@@ -174,7 +182,7 @@ function Footer() {
                                 <nav class="mb-5 list-none">
                                     {weblink.map((item) => (
                                         <li class="mt-3">
-                                            <Link class={unb} href={item.href}>{item.name}</Link>
+                                            <a class={unb} onClick={openError}>{item.name}</a>
                                         </li>
                                     ))}
                                 </nav>
@@ -222,6 +230,59 @@ function Footer() {
                     </Dialog.Title>
                         <div className='mt-3 text-md text-[#2F2F2F] font-medium'>โทรศัพท์ 02-218-4897</div>
                   </Dialog.Panel>
+                </Transition.Child>
+              </div>
+            </div>
+          </Dialog>
+        </Transition>
+        <Transition appear show={isError} as={Fragment}>
+          <Dialog as="div" className="relative z-10" onClose={closeError}>
+            <Transition.Child
+              as={Fragment}
+              enter="ease-out duration-300"
+              enterFrom="opacity-0"
+              enterTo="opacity-100"
+              leave="ease-in duration-200"
+              leaveFrom="opacity-100"
+              leaveTo="opacity-0"
+            >
+              <div className="fixed inset-0 bg-black bg-opacity-25" />
+            </Transition.Child>
+            <div className="fixed inset-0 overflow-y-auto">
+              <div className="flex min-h-full items-center justify-center p-4 text-center">
+                <Transition.Child
+                  as={Fragment}
+                  enter="ease-out duration-300"
+                  enterFrom="opacity-0 scale-95"
+                  enterTo="opacity-100 scale-100"
+                  leave="ease-in duration-200"
+                  leaveFrom="opacity-100 scale-100"
+                  leaveTo="opacity-0 scale-95"
+                >
+                 <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded bg-white p-6 text-left align-middle shadow-xl transition-all">
+                  <Dialog.Title
+                    as="h3"
+                    className="text-lg font-medium leading-6 text-gray-900"
+                  >
+                    เนื้อหานี้ยังไม่เปิดใช้งาน
+                  </Dialog.Title>
+                  <div className="mt-2">
+                    <p className="text-sm text-gray-500">
+                    ขออภัยในความไม่สะดวก หน้าที่คุณกำลังจะไปยังไม่เปิดใช้งานสำหรับบุคคลทั่วไป
+                    </p>
+                  </div>
+
+                  <div className="mt-4">
+                    <button
+                      type="button"
+                      className="flex px-4 py-2 text-sm font-medium border-2 btn-active underline-thickness-1 hover:underline hover:bg-[#1F1F1F] hover:text-[#F2F2F2]
+                      cursor-pointer transition-colors duration-300"
+                      onClick={closeError}
+                    >
+                      ปิด
+                    </button>
+                  </div>
+                </Dialog.Panel>
                 </Transition.Child>
               </div>
             </div>

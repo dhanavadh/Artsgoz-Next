@@ -139,6 +139,18 @@ function Navbar() {
     function openModal1() {
         setIsStart(true)
     }
+    
+    // Alert No Object
+    let [isOpen2, setIsOpen2] = useState(false)
+  
+    function closeModal2() {
+      setIsOpen2(false)
+    }
+  
+    function openModal2() {
+      setIsOpen2(true)
+    }
+
     //NavCo
     const [color, setColor ] = useState(false);
     const changeColor = () => {
@@ -209,7 +221,7 @@ function Navbar() {
                                                 {item.name}
                                                 <span className="absolute inset-0" />
                                                 </a>
-                                                <p className="mt-1 text-gray-600">{item.description}</p>
+                                                <div className="mt-1 text-gray-600">{item.description}</div>
                                             </div>
                                             {/* <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                                                 <item.icon className="h-6 w-6 text-gray-600 group-hover:text-pink-600" aria-hidden="true" />
@@ -265,7 +277,7 @@ function Navbar() {
                                                 {item.name}
                                                 <span className="absolute inset-0" />
                                                 </a>
-                                                <p className="mt-2 text-gray-600">{item.description}</p>
+                                                <div className="mt-2 text-gray-600">{item.description}</div>
                                             </div>
                                             {/* <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                                                 <item.icon className="h-6 w-6 text-gray-600 group-hover:text-pink-600" aria-hidden="true" />
@@ -318,7 +330,7 @@ function Navbar() {
                                                 {item.name}
                                                 <span className="absolute inset-0" />
                                                 </a>
-                                                <p className="mt-1 text-gray-600">{item.description}</p>
+                                                <div className="mt-1 text-gray-600">{item.description}</div>
                                             </div>
                                             {/* <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                                                 <item.icon className="h-6 w-6 text-gray-600 group-hover:text-pink-600" aria-hidden="true" />
@@ -371,7 +383,7 @@ function Navbar() {
                                                 {item.name}
                                                 <span className="absolute inset-0" />
                                                 </a>
-                                                <p className="mt-1 text-gray-600">{item.description}</p>
+                                                <div className="mt-1 text-gray-600">{item.description}</div>
                                             </div>
                                             {/* <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                                                 <item.icon className="h-6 w-6 text-gray-600 group-hover:text-pink-600" aria-hidden="true" />
@@ -424,7 +436,7 @@ function Navbar() {
                                                 {item.name}
                                                 <span className="absolute inset-0" />
                                                 </a>
-                                                <p className="mt-1 text-gray-600">{item.description}</p>
+                                                <div className="mt-1 text-gray-600">{item.description}</div>
                                             </div>
                                             {/* <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                                                 <item.icon className="h-6 w-6 text-gray-600 group-hover:text-pink-600" aria-hidden="true" />
@@ -458,14 +470,7 @@ function Navbar() {
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6 ml-1">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
                                 </svg>
-                            </a>
-                            {/* <a class="flex px-2 py-1 border-2 btn underline-thickness-1 underline-offset-4 hover:underline hover:bg-[#1F1F1F] hover:text-[#F2F2F2]
-                                cursor-pointer transition-colors duration-300" onClick={openModal}>
-                                เข้าสู่ระบบ
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ml-1">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
-                                </svg>
-                            </a> */}
+                            </a>                            
                         </div>
                         <div className="lg:hidden flex items-center space-x-5">
                                 <button
@@ -539,7 +544,7 @@ function Navbar() {
                             <img src='https://www.arts.chula.ac.th/goz/asset/icons/ab-nav.png' className='h-10 items-center justify-center'></img>
                         </div>
                         <div className='mx-5 my-2 flex items-center justify-center'>
-                            <p className='text-2xl'>ArtsID Login</p>
+                            <div className='text-2xl'>ArtsID Login</div>
                         </div>
                     </Dialog.Title>
                 <div className='mx-5 mt-3'>
@@ -653,7 +658,7 @@ function Navbar() {
                                 {item.name}
                                 <span className="absolute inset-0" />
                                 </a>
-                                <p className="mt-2 text-gray-600">{item.description}</p>
+                                <div className="mt-2 text-gray-600">{item.description}</div>
                             </div>
                             </div>
                         ))}
@@ -667,11 +672,11 @@ function Navbar() {
                             className="group relative flex items-center gap-x-2 rounded py-2 text-sm leading-4 mr-1"
                             >
                             <div className="flex-auto">
-                                <a href={item.href} className="block font-semibold text-[#1f1f1f] underline-thickness-1 underline-offset-4 hover:underline cursor-pointer transition-colors duration-300">
+                                <Link href={item.href} className="block font-semibold text-[#1f1f1f] underline-thickness-1 underline-offset-4 hover:underline cursor-pointer transition-colors duration-300">
                                 {item.name}
                                 <span className="absolute inset-0" />
-                                </a>
-                                <p className="mt-2 text-gray-600">{item.description}</p>
+                                </Link>
+                                <div className="mt-2 text-gray-600">{item.description}</div>
                             </div>
                             </div>
                         ))}
@@ -693,6 +698,90 @@ function Navbar() {
                     
                     </div>
                 </div>
+                  </Dialog.Panel>
+                </Transition.Child>
+              </div>
+            </div>
+          </Dialog>
+        </Transition>
+
+
+        <Transition appear show={isOpen} as={Fragment}>
+          <Dialog as="div" className="relative z-10" onClose={closeModal}>
+            <Transition.Child
+              as={Fragment}
+              enter="ease-out duration-300"
+              enterFrom="opacity-0"
+              enterTo="opacity-100"
+              leave="ease-in duration-200"
+              leaveFrom="opacity-100"
+              leaveTo="opacity-0"
+            >
+              <div className="fixed inset-0 bg-black bg-opacity-25" />
+            </Transition.Child>
+                                {/* gml */}
+            <div className="fixed inset-0 overflow-y-auto">
+              <div className="flex min-h-full items-center justify-center p-4 text-center">
+                <Transition.Child
+                  as={Fragment}
+                  enter="ease-out duration-300"
+                  enterFrom="opacity-0 scale-95"
+                  enterTo="opacity-100 scale-100"
+                  leave="ease-in duration-200"
+                  leaveFrom="opacity-100 scale-100"
+                  leaveTo="opacity-0 scale-95"
+                >
+                  <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded bg-white p-6 text-left align-middle shadow-xl transition-all">
+                    <Dialog.Title
+                      as="h3"
+                    //   className="text-lg font-medium leading-6 text-gray-900"
+                    >
+                        <div className="grid justify-items-end">
+                            <button
+                                className="inline-flex text-[#1F1F1F] *text-sm font-medium underline-thickness-1 underline-offset-4 hover:underline "
+                                onClick={closeModal}
+                            >
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div className='mx-5 mb-5 flex items-center justify-center'>
+                            <img src='https://www.arts.chula.ac.th/goz/asset/icons/ab-nav.png' className='h-10 items-center justify-center'></img>
+                        </div>
+                        <div className='mx-5 my-2 flex items-center justify-center'>
+                            <div className='text-2xl'>ArtsID Login</div>
+                        </div>
+                    </Dialog.Title>
+                <div className='mx-5 mt-3'>
+                  <span class="block text-sm font-medium text-[#1F1F1F]">รหัสนิสิต</span>
+                  <input type="text" placeholder='ป้อนรหัสนิสิตที่นี่' class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 font-mono text-sm shadow-sm placeholder-slate-400
+                    focus:outline-none focus:border-[#1F1F1F] focus:ring-1 focus:ring-[#1F1F1F]
+                    disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
+                    invalid:border-pink-500 invalid:text-pink-600
+                    focus:invalid:border-pink-500 focus:invalid:ring-pink-500
+                  "/>
+                </div>
+                <div className='mx-5 mt-3'>
+                  <span class="block text-sm font-medium text-[#1F1F1F]">รหัสผ่าน</span>
+                  <input type="password" placeholder='ป้อนรหัสผ่านที่นี่' class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 font-mono text-sm shadow-sm placeholder-slate-400
+                    focus:outline-none focus:border-[#1F1F1F] focus:ring-1 focus:ring-[#1F1F1F]
+                    disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
+                    invalid:border-pink-500 invalid:text-pink-600
+                    focus:invalid:border-pink-500 focus:invalid:ring-pink-500
+                  "/>
+                </div>
+                <div className='m-5 flex items-center justify-center'>
+                  <a className='flex px-4 py-2 mx-2 text-sm font-medium border-2 btn-active underline-thickness-1 hover:underline hover:bg-[#1F1F1F] hover:text-[#F2F2F2]
+                    cursor-pointer transition-colors duration-300'>เข้าสู่ระบบ</a>
+                    <a className='flex px-4 py-2 mx-2 text-sm font-medium border-2 btn-active underline-thickness-1 hover:underline hover:bg-[#1F1F1F] hover:text-[#F2F2F2]
+                    cursor-pointer transition-colors duration-300'>ลืมรหัสผ่าน
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-5 h-5 ml-1">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                        </svg>
+                        </a>
+                </div>
+                {/* gml */}
                   </Dialog.Panel>
                 </Transition.Child>
               </div>

@@ -9,32 +9,20 @@ function Content1() {
     return (
         <div>
             <div className='grid grid-cols-1'>
-                {/* <div className='grid justify-left items-end gap-y-0 min-h-screen border-t-2 border-l-0 border-r-2 border-b-2 border-gray-900'>
-                    <div className='text-8xl '>สวัสดี ก.อศ.</div>
-                    <div className='text-8xl '>สวัสดี ก.อศ.</div>
-                </div> */}
+                
                 <div className="grid grid-cols-3 min-h-screen">
                     <div className="col-span-3">
-                        <img src='https://www.arts.chula.ac.th/goz/asset/banner/8dCOiId6lJaxhgVS7UjcEjGy4mpFI4Zg.jpg' className='ssa'></img>
-                        {/* <video autoPlay loop muted className='ssa'> 
-                            <source src={Vid1} type='video/mp4'></source>
-                        </video> */}
+                        <img src='https://www.arts.chula.ac.th/goz/asset/banner/8dCOiId6lJaxhgVS7UjcEjGy4mpFI4Zg.jpg' className='ssa'></img>                  
                     </div>
                     <div className="col-span-2">
                         <div class="grid grid-rows-1 gap-2 mx-10">
                             <div class="col-span-4">
                                 <p className='text-7xl text-[#F8E1EA]'>What is <b>AKSORN</b>?</p>    
                             </div>
-                            <div class="col-span-1 ">
-                                <div className='flex text-6xl font-semibold mt-2 underline text-[#F8E1EA] mb-0'>
-                                        {/* <Typewriter
-                                            options={{
-                                                strings: ['language?', 'drama?', 'literature?', 'BRK 503?', 'humanities?', 'philosophy?', 'technology?'],
-                                                autoStart: true,
-                                                loop: true,
-                                            }}
-                                        /> */}
-                                </div>
+                            <div class="col-span-4 ">
+                                <div className='flex text-xl font-semibold mt-2 text-[#F8E1EA] mb-0'>
+                                    อักษรฯ คืออะไร แล้วอักษรฯ ให้อะไรกับเรา? มาค้นหาคำตอบได้ที่นี่
+                                  </div>
                             </div>
                             <div class="col-span-4 mt-2">
                                 <div type='button' className='flex px-2 py-1 border-2 border-[#F8E1EA] w-fit h-auto mt-2 text-[#F8E1EA] underline-thickness-1 hover:underline hover:bg-[#F8E1EA] hover:text-[#1F1F1F]
@@ -47,7 +35,7 @@ function Content1() {
                             </div>
                         </div>
                     </div>
-                    <div className='grid grid-cols-1 place-items-end'>
+                    {/* <div className='grid grid-cols-1 place-items-end'>
                             <a type='button' className='flex px-2 py-1 border-2 border-[#F8E1EA] w-fit h-auto text-[#F8E1EA] underline-thickness-1 hover:underline hover:bg-[#F8E1EA] hover:text-[#1F1F1F]
         `                           cursor-pointer transition-colors duration-300' href='https://youtu.be/5Aeg80lzhIY?si=N_jc5FcmDMQqjF9-' target='_blank'>
                                     <div ><b>GOZ TV</b></div>
@@ -57,7 +45,7 @@ function Content1() {
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
                                     </svg>
                             </a>
-                    </div>
+                    </div> */}
                 </div>            
             </div>
         </div>

@@ -69,28 +69,28 @@ const ArticleContent1 = () => {
                                     
                                     <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
                                     <p class="w-32 text-lg font-normal text-gray-500 sm:text-right  shrink-0">
-                                        7 – 18 สิงหาคม 2566
+                                        20 สิงหาคม 2566
                                     </p>
                                     <h3 class="text-lg font-semibold text-gray-900 ">
-                                        <a href="#" class="hover:underline">ลงทะเบียนเรียนสาย เพิ่มรายวิชา/เปลี่ยนตอนเรียน</a>
+                                        <a href="#" class="hover:underline">วันสุดท้าย ชำระค่าเล่าเรียน ค่าปรับลงทะเบียนเรียนสาย (หากมี)</a>
                                     </h3>
                                     </div>
 
                                     <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
                                     <p class="w-32 text-lg font-normal text-gray-500 sm:text-right  shrink-0">
-                                        7 – 18 สิงหาคม 2566
+                                        23 – 25 สิงหาคม 2566
                                     </p>
                                     <h3 class="text-lg font-semibold text-gray-900 ">
-                                        <a href="#" class="hover:underline">ลงทะเบียนเรียนสาย เพิ่มรายวิชา/เปลี่ยนตอนเรียน</a>
+                                        <a href="#" class="hover:underline">นิสิตตรวจสอบผลการลงทะเบียนเรียน (CR54) ได้จากอีเมลของนิสิต</a>
                                     </h3>
                                     </div>
 
                                     <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
                                     <p class="w-32 text-lg font-normal text-gray-500 sm:text-right  shrink-0">
-                                        7 – 18 สิงหาคม 2566
+                                        15 กันยายน 2566
                                     </p>
                                     <h3 class="text-lg font-semibold text-gray-900 ">
-                                        <a href="#" class="hover:underline">ลงทะเบียนเรียนสาย เพิ่มรายวิชา/เปลี่ยนตอนเรียน</a>
+                                        <a href="#" class="hover:underline">นิสิตลดรายวิชา (ถึงเวลา 23.59 น.)</a>
                                     </h3>
                                     </div>                                                                
                                 </div>
