@@ -117,6 +117,8 @@ const readings = [
     `flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-[#1f1f1f] underline-thickness-1 underline-offset-4 hover:underline cursor-pointer transition-colors duration-300`,
   ]
 
+const isBrowser = () => typeof window !== 'undefined';
+
 function Navbar() {
     let [isOpen, setIsOpen] = useState(false)
   
@@ -144,10 +146,13 @@ function Navbar() {
             setColor(true)
         }else {
             setColor(false)
-        }
+        }        
 
     }
-    window.addEventListener('scroll', changeColor);
+    useEffect(() => {
+      window.addEventListener('scroll', changeColor);
+    }) 
+    
     return (
         <div>
             <div className="flex flex-col items-center justify-center">
