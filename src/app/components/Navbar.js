@@ -92,7 +92,7 @@ const readings = [
     { name: 'ทำเนียบประธานฝ่าย และช่องทางการติดต่อ', description: 'ก.อศ. 66 มีใครบ้าง ดูได้ที่นี่เลย', href: '/about/us', icon: UserGroupIcon },
     { name: 'โครงการ', description: 'โครงการทั้งหมดจาก ก.อศ. 66', href: '/about/projects', icon: BriefcaseIcon },
     { name: 'ติดต่อเรา', description: 'ข้อมูลติดต่อกับก.อศ.', href: '/about/connect', icon: QuestionMarkCircleIcon },
-    { name: 'งานประชาสัมพันธ์ ก.อศ.', description: 'ติดตาม/ขอลงงานประชาสัมพันธ์ได้ที่นี่', href: 'https://www.arts.chula.ac.th/goz/dev/atb/', icon: MegaphoneIcon },
+    { name: 'งานประชาสัมพันธ์ ก.อศ.', description: 'ติดตาม/ขอลงงานประชาสัมพันธ์ได้ที่นี่', href: 'https://airtable.com/shrOw4kbtV4ghnpRW', icon: MegaphoneIcon },
     { name: 'ดาวน์โหลดข้อมูล', description: 'สามารถดาวน์โหลดเอกสาร ฟอร์ม และตราสัญลักษณ์องค์กรได้ที่นี่', href: '/artslabs', icon: CommandLineIcon },
   ]
   const aboutAll = [
