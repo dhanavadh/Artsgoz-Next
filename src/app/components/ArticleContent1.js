@@ -142,7 +142,7 @@ const ArticleContent1 = () => {
                 </div>             
                 <div className='grid overflow-y-auto h-screen col-span-11 border-[#333333] border-l-2 border-b-2'>
                     <div className='flex flex-grow bg-slate-400'>
-                        <img src='https://scontent.fbkk29-5.fna.fbcdn.net/v/t39.30808-6/362996035_701800705318101_7136975956255372460_n.jpg?_nc_cat=107&cb=99be929b-3346023f&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeHtBQrZMadEGgfZNcNq7663AJGkE8yPFAwAkaQTzI8UDEgMBWOCNPzqacXq68L-53FxT0ywjWOtazs_b1oDX7_X&_nc_ohc=WXC434U7PSsAX9CUCud&_nc_ht=scontent.fbkk29-5.fna&oh=00_AfDsS6bdqANvStz_eWA4ZnjTJnCCvgCIrkPicJcBcTjtFA&oe=64D3E0A0'>
+                        <img src='https://www.arts.chula.ac.th/goz/asset/banner/ads/362996035_701800705318101_7136975956255372460_n.jpg'>
                         </img>
                     </div>
                     <div className='flex flex-grow bg-[#1f1f1f] text-white'>
@@ -153,7 +153,7 @@ const ArticleContent1 = () => {
                  
 
                     <div className='flex flex-grow bg-slate-400'>
-                        <img src='https://scontent.fbkk29-7.fna.fbcdn.net/v/t39.30808-6/362266757_696737459157759_2983036754635098537_n.jpg?_nc_cat=108&cb=99be929b-3346023f&ccb=1-7&_nc_sid=730e14&_nc_ohc=K4MTj69y_u8AX9PqX2z&_nc_ht=scontent.fbkk29-7.fna&oh=00_AfCxta94N2Nq4lRo8eYGyrciW2bG8-_7UdxoUfBUe5IBhQ&oe=64D3E874'>
+                        <img src='https://www.arts.chula.ac.th/goz/asset/banner/ads/362266757_696737459157759_2983036754635098537_n.jpg'>
                         </img>
                     </div>
                     <div className='flex flex-grow bg-[#1f1f1f] text-white'>
