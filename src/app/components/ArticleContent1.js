@@ -2,6 +2,10 @@
 import React, {useState, Fragment} from 'react'
 import './MS.css'
 import { Dialog, Transition, Popover } from '@headlessui/react'
+import Ads1 from '@/app/components/asset/1.jpg'
+import Ads2 from "@/app/components/asset/2.jpg"
+import Ads4 from "@/app/components/asset/4.jpg"
+import Image from 'next/image'
 
 const ArticleContent1 = () => {
     let [isOpen, setIsOpen] = useState(false)
@@ -140,10 +144,9 @@ const ArticleContent1 = () => {
                         </span>                    
                     </div>
                 </div>             
-                <div className='grid overflow-y-auto h-screen col-span-11 border-[#333333] border-l-2 border-b-2'>
-                    <div className='flex flex-grow bg-slate-400'>
-                        <img src='https://www.arts.chula.ac.th/goz/asset/banner/ads/362996035_701800705318101_7136975956255372460_n.jpg'>
-                        </img>
+                <div className='grid overflow-y-auto h-screen col-span-11 border-[#333333] border-l-2 border-b-2'>                      
+                    <div className='flex flex-grow'>
+                        <Image src={Ads1}></Image>
                     </div>
                     <div className='flex flex-grow bg-[#1f1f1f] text-white'>
                         <div className='p-5 text-xl font-medium'>
@@ -153,8 +156,7 @@ const ArticleContent1 = () => {
                  
 
                     <div className='flex flex-grow bg-slate-400'>
-                        <img src='https://www.arts.chula.ac.th/goz/asset/banner/ads/362266757_696737459157759_2983036754635098537_n.jpg'>
-                        </img>
+                        <Image src={Ads2}></Image>
                     </div>
                     <div className='flex flex-grow bg-[#1f1f1f] text-white'>
                         <div className='p-5 text-xl font-medium'>
@@ -163,8 +165,7 @@ const ArticleContent1 = () => {
                     </div>
 
                     <div className='flex flex-grow bg-slate-400'>
-                        <img src='https://instagram.fbkk29-7.fna.fbcdn.net/v/t39.30808-6/361848734_692664322898406_768176824244313902_n.jpg?stp=dst-jpg_e15_fr_s1080x1080&_nc_ht=instagram.fbkk29-7.fna.fbcdn.net&_nc_cat=106&_nc_ohc=uZ7q8QyCwIkAX-d2Npn&edm=ABmJApAAAAAA&ccb=7-5&ig_cache_key=MzE1MDE0MzYxNDg0MzY1OTY4NA%3D%3D.2-ccb7-5&oh=00_AfA4HqVY0fvC_4EVSHmty6BZx29zwFTqy8SIlkxEjQq-7w&oe=64D4EC77&_nc_sid=b41fef'>
-                        </img>
+                        <Image src={Ads4}></Image>
                     </div>
                     <div className='flex flex-grow bg-[#1f1f1f] text-white'>
                         <div className='p-5 text-xl font-medium'>

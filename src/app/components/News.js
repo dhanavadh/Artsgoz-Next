@@ -1,6 +1,9 @@
 import React from 'react'
 import './MS.css'
-import { ArrowLongRightIcon } from '@heroicons/react/24/outline'
+import Ads5 from "@/app/components/asset/5.jpg"
+import Ads6 from "@/app/components/asset/6.jpg"
+import Ads7 from "@/app/components/asset/7.jpg"
+import Image from 'next/image'
 
 const News = () => {
   return (
@@ -187,8 +190,7 @@ const News = () => {
                     <div className='grid overflow-y-auto h-screen col-span-11 border-[#333333] border-l-2 border-b-2'>
                     
                     <div className='flex flex-grow bg-slate-400'>
-                        <img src='https://scontent.fbkk29-7.fna.fbcdn.net/v/t39.30808-6/363424171_703116491853189_3334840309960871642_n.jpg?_nc_cat=106&cb=99be929b-3346023f&ccb=1-7&_nc_sid=730e14&_nc_ohc=WIfKsvK11TQAX9aqS-9&_nc_ht=scontent.fbkk29-7.fna&oh=00_AfCcZH-8zqQA_Tr2DConeNa99GfB7PXKYq8B0N_WUE2eOA&oe=64D59203'>
-                        </img>
+                        <Image src={Ads6}></Image>
                     </div>
                     <div className='flex flex-grow bg-[#1f1f1f] text-white'>
                         <div className='p-5 text-xl font-medium'>
@@ -197,8 +199,7 @@ const News = () => {
                     </div>
 
                     <div className='flex flex-grow bg-slate-400'>
-                        <img src='https://scontent.fbkk29-6.fna.fbcdn.net/v/t39.30808-6/305184133_6040343432656018_8376587585280620754_n.jpg?_nc_cat=109&cb=99be929b-3346023f&ccb=1-7&_nc_sid=a26aad&_nc_ohc=dcskODkxFewAX-H22tj&_nc_ht=scontent.fbkk29-6.fna&oh=00_AfDL1TExMWpV3CfQcp02iMASmN9GddvBvOVC8iEY26yfWQ&oe=64D4F833'>
-                        </img>
+                        <Image src={Ads5}></Image>
                     </div>
 
                     
@@ -211,8 +212,7 @@ const News = () => {
 
 
                     <div className='flex flex-grow bg-slate-400'>
-                        <img src='https://scontent.fbkk29-8.fna.fbcdn.net/v/t39.30808-6/363935641_699569662207872_1896115098665247658_n.jpg?_nc_cat=105&cb=99be929b-3346023f&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=D52YBihl-fMAX-_x3e8&_nc_ht=scontent.fbkk29-8.fna&oh=00_AfBaJ2KpSEwA8rQew-wV3aoK4-svEFPjIl-5D62WnDuxHw&oe=64D4F444'>
-                        </img>
+                        <Image src={Ads7}></Image>
                     </div>
                     <div className='flex flex-grow bg-[#1f1f1f] text-white sm:text-lg'>
                         <div className='p-5 text-xl font-medium'>
