@@ -13,7 +13,7 @@ const Content2c1808231 = () => {
             <div className='grid grid-cols-12 mt-10'>
                 <div className='grid col-span-1 lg:col-span-2'>
                 </div>
-                <div className='grid col-span-10 lg:col-span-8'>
+                <div className='grid col-span-10 lg:col-span-8 px-1'>
                     <div className='grid text-4xl font-medium leading-relaxed text-[#1f1f1f] pt-5 pb-2'>
                         ความสัมพันธ์ “ครู-ศิษย์” :  เมื่อศิษย์เคารพ “ติวเตอร์” กับ “ครู” ไม่เท่ากัน
                     </div>
@@ -40,7 +40,7 @@ const Content2c1808231 = () => {
                         </p>
                         <div className='grid grid-cols-1 lg:grid-cols-2 items-center justify-center'>
                             <div>
-                                <Image src={LookUp200823}>
+                                <Image src={LookUp200823} className=''>
                                 </Image>
                             </div>
                             <div>
@@ -71,31 +71,21 @@ const Content2c1808231 = () => {
                         </div>
 
                     </div>
-                    <div className=''>
-                        <p className='text-xl pb-3 font-medium'>บรรณานุกรม</p>
-                        <p className='text-lg py-1'>กระทรวงศึกษาธิการ. กรมสามัญศึกษา. (2528). ประเพณีไหว้ครู มาจากไหน? จากคติพราหมณ์ ถึงสมัยกรมพระยาดำรงฯ และแบบพิธีราชการ. <i>ศิลปวัฒนธรรม, 6</i>(7). สืบค้นจาก  https://www.silpa-mag.com/history/article_34088 </p>
-                        <p className='text-lg py-1'>พระเผด็จ ทตฺตชีโว. (2531). <i>ไหว้ครู.</i> กรุงเทพฯ: รวิกานต์.</p>
-                        <p className='text-lg py-1'>เศรษฐมันตร์ กาญจนกุล. (2547). <i>พิธีไหว้ครู.</i> กรุงเทพฯ: เศรษฐศิลป์.</p>
-                        <p className='text-lg py-1'>ส. พลายน้อย. (2554). <i>พืชพรรณไม้มงคล</i> (พิมพ์ครั้งที่ 5). กรุงเทพฯ : พิมพ์คำ</p>
-                        <p className='text-lg py-1'>สุวรรณา เปรมโสตร์. (2551). โรงเรียนกวดวิชา ปัจจัยที่ห้าของครอบครัวยุคใหม่. สืบค้นจาก https://www.sarakadee.com/2008/11/01/tutor/ </p>
-                        <p className='text-lg py-1'>ThaiPublica. (2556). “กวดวิชา” มาตรฐานการศึกษาไทย เรียน “เพื่อสอบ” หรือเรียน “เพื่อรู้”. สืบค้นจาก https://thaipublica.org/2013/03/tutorial-critical-study-of-thailand/</p>
-                        <p className='text-lg py-1'>Thanyawat Ippoodom. (2561). ยิ่งแข่งขัน ยิ่งหลงทาง : กับดักการศึกษาไทยในมุมของ อ.อรรถพล อนันตวรสกุล. สืบค้นจาก https://thematter.co/social/education-trap-interview/46925</p>
+                    <div className='grid'>
+                        <div className='text-xl pb-3 font-medium'>บรรณานุกรม</div>
+                        <div className=' py-1'>กระทรวงศึกษาธิการ. กรมสามัญศึกษา. (2528). ประเพณีไหว้ครู มาจากไหน? จากคติพราหมณ์ ถึงสมัยกรมพระยาดำรงฯ และแบบพิธีราชการ. <i>ศิลปวัฒนธรรม, 6</i>(7). สืบค้นจาก  https://www.silpa-mag.com/history/article_34088 </div>
+                        <div className=' py-1'>พระเผด็จ ทตฺตชีโว. (2531). <i>ไหว้ครู.</i> กรุงเทพฯ: รวิกานต์.</div>
+                        <div className=' py-1'>เศรษฐมันตร์ กาญจนกุล. (2547). <i>พิธีไหว้ครู.</i> กรุงเทพฯ: เศรษฐศิลป์.</div>
+                        <div className=' py-1'>ส. พลายน้อย. (2554). <i>พืชพรรณไม้มงคล</i> (พิมพ์ครั้งที่ 5). กรุงเทพฯ : พิมพ์คำ</div>
+                        <div className=' py-1'>สุวรรณา เปรมโสตร์. (2551). โรงเรียนกวดวิชา ปัจจัยที่ห้าของครอบครัวยุคใหม่. สืบค้นจาก https://www.sarakadee.com/2008/11/01/tutor/ </div>
+                        <div className=' py-1'>ThaiPublica. (2556). “กวดวิชา” มาตรฐานการศึกษาไทย เรียน “เพื่อสอบ” หรือเรียน “เพื่อรู้”. สืบค้นจาก https://thaipublica.org/2013/03/tutorial-critical-study-of-thailand/</div>
+                        <div className=' py-1'>Thanyawat Ippoodom. (2561). ยิ่งแข่งขัน ยิ่งหลงทาง : กับดักการศึกษาไทยในมุมของ อ.อรรถพล อนันตวรสกุล. สืบค้นจาก https://thematter.co/social/education-trap-interview/46925</div>
                     </div>
                 </div>
                 <div className='grid col-span-1 lg:col-span-2'>
                 </div>
             </div>
-            {/* <div className='mt-10 divide-y-2'>
-                        <div>
-                            
-                        </div>
-                        <div className='pb-5'>
-
-                        </div>
-
-            </div>  */}
             <div className='flex items-center justify-center mt-10 text-xl font-medium'>
-                {/* <p className='px-3'>อ่านบทความถัดไป</p> */}
                 <a className='px-3 underline decoration-pink-500 decoration-4 hover:decoration-blue-500 underline-offset-4 cursor-pointer' href='/lookup'>ดูบทความอื่น ๆ</a>
             </div>
         </div>

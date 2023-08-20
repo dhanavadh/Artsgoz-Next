@@ -21,7 +21,7 @@ function Content1c1808231() {
     }
     return (
         <div>
-            <div className='grid grid-cols-1 mt-96'>
+            <div className='grid grid-cols-1 mt-48 sm:mt-96'>
                 <div className="grid min-h-min">
                     <div className="col-span-3">
                         <Image src={LookUp200823} className='ssa' />                        

@@ -33,7 +33,7 @@ const RegHeadings = () => {
                                     <div>บทความต่าง ๆ จาก ก.อศ. รวมอยู่ที่นี่แล้ว สามารถเลือกดูได้ตามความสนใจ</div>
                                 </div>
                                 <div className='grid grid-cols-1 gap-4'>
-                                    <div className="flex flex-col bg-white shadow-lg dark:bg-neutral-700 md:flex-row">
+                                    <div className="flex flex-col bg-white shadow-lg  md:flex-row">
                                     <Image
                                         className="h-96 w-full object-cover md:h-auto md:w-64"
                                         src={LookUp200823}
@@ -55,7 +55,7 @@ const RegHeadings = () => {
                                         </p>
                                     </div>
                                     </div>
-                                    {/* <div className="flex flex-col bg-white shadow-lg dark:bg-neutral-700 md:flex-row">
+                                    {/* <div className="flex flex-col bg-white shadow-lg  md:flex-row">
                                     <Image
                                         className="h-96 w-full object-cover md:h-auto md:w-64"
                                         src={IMG1}
