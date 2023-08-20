@@ -6,11 +6,11 @@
       "static/css/app/not-found.css",
       "static/chunks/app/not-found.js"
     ],
-    "/lookup/page": [
+    "/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/lookup/page.css",
-      "static/chunks/app/lookup/page.js"
+      "static/css/app/layout.css",
+      "static/chunks/app/layout.js"
     ],
     "/lookup/180823_1/page": [
       "static/chunks/webpack.js",
@@ -18,11 +18,11 @@
       "static/css/app/lookup/180823_1/page.css",
       "static/chunks/app/lookup/180823_1/page.js"
     ],
-    "/layout": [
+    "/lookup/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/layout.css",
-      "static/chunks/app/layout.js"
+      "static/css/app/lookup/page.css",
+      "static/chunks/app/lookup/page.js"
     ],
     "/page": [
       "static/chunks/webpack.js",
