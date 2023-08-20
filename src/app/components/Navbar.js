@@ -60,9 +60,9 @@ const readings = [
   ]
   const projectArts = [
     { name: 'Arts Podcast', description: 'รายการ Podcast จากก.อศ.', href: '/podcast', icon: MicrophoneIcon },
-    { name: 'บทความ', description: 'รวมบทความจากนิสิตมาไว้ที่นี่แล้ว', href: '/podcast', icon: MicrophoneIcon },
-    { name: 'ชมรม', description: 'อักษรฯ มีชมรมอะไรบ้าง ดูได้ที่นี่เลย', href: '/podcast', icon: MicrophoneIcon },
-    { name: 'ผลงานนิสิต', description: 'ผลงานทั้งหมดของนิสิตอักษร ฯ', href: '/podcast', icon: MicrophoneIcon },
+    { name: 'บทความ', description: 'รวมบทความจากนิสิตมาไว้ที่นี่แล้ว', href: '/lookup', icon: MicrophoneIcon },
+    { name: 'ชมรม', description: 'อักษรฯ มีชมรมอะไรบ้าง ดูได้ที่นี่เลย', href: '/club', icon: MicrophoneIcon },
+    { name: 'ผลงานนิสิต', description: 'ผลงานทั้งหมดของนิสิตอักษร ฯ', href: '/project', icon: MicrophoneIcon },
   ]
   const projectAll = [
     { name: 'ดูกิจกรรมทั้งหมด', href: '/projects', icon: ArrowLongRightIcon },
@@ -156,7 +156,7 @@ function Navbar() {
     //NavCo
     const [color, setColor ] = useState(false);
     const changeColor = () => {
-        if(window.scrollY >= 500){
+        if(window.scrollY >= 300){
             setColor(true)
         }else {
             setColor(false)

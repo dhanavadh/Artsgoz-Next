@@ -4,6 +4,7 @@ import Ads5 from "@/app/components/asset/5.jpg"
 import Ads6 from "@/app/components/asset/6.jpg"
 import Ads7 from "@/app/components/asset/7.jpg"
 import Image from 'next/image'
+import LookUp200823 from '../components/asset/LookUp-200823.jpg'
 
 const News = () => {
   return (
@@ -145,7 +146,7 @@ const News = () => {
                                                         </h3>
                                                         </div>
 
-                                                        <div class="flex flex-col gap-2 py-2 my-2 sm:gap-6 sm:flex-row sm:items-center">         
+                                                        {/* <div class="flex flex-col gap-2 py-2 my-2 sm:gap-6 sm:flex-row sm:items-center">         
                                                         <h3 class="font-semibold text-[#1f1f1f] ">
                                                             <div  class="">
                                                                 <a className='text-xl bg-pink-500 '>นิสิตปี 2 - 4 ที่ยังไม่ได้ลงทะเบียน 2206103 RES COMP SKILLS หรือ 2206104 RES INFO RETR SKL, 2200220 THAI CIV, 2210260 INTRO LIT  </a>
@@ -156,7 +157,7 @@ const News = () => {
                                                                 
                                                             </div>
                                                         </h3>
-                                                        </div>
+                                                        </div> */}
                                                         
                                                         <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
                                                             <p class="w-32 text-lg font-normal text-gray-500 sm:text-right  shrink-0">
@@ -189,6 +190,15 @@ const News = () => {
                     </div>
                     <div className='grid overflow-y-auto h-screen col-span-11 border-[#333333] border-l-2 border-b-2'>
                     
+                    <div className='flex flex-grow bg-slate-400'>
+                        <Image src={LookUp200823}></Image>
+                    </div>
+                    <div className='flex flex-grow bg-[#1f1f1f] text-white'>
+                        <div className='p-5 text-xl font-medium'>
+                            <span className='leading-loose'>เมื่อศิษย์เคารพ “ติวเตอร์” กับ “ครู” ไม่เท่ากัน – บทความล่าสุดจากฝ่ายศิลปวัฒนธรรม สามารถอ่านได้แล้ววันนี้ <a href='/lookup/180823_1' className='underline decoration-pink-500 decoration-4 underline-offset-4 hover:decoration-blue-500 cursor-pointer'>ดูข้อมูลเพิ่มเติมที่นี่</a></span>
+                        </div>                        
+                    </div>
+
                     <div className='flex flex-grow bg-slate-400'>
                         <Image src={Ads6}></Image>
                     </div>

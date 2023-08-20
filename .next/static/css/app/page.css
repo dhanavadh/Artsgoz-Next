@@ -15,6 +15,21 @@
     
     
   }
+.ssaLU {
+    position: fixed;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    filter: brightness(0.5) grayscale(100%);;
+    
+    
+    
+  }
   ::-moz-selection { /* Code for Firefox */
     color: #F8E1EA;
     background: #1F1F1F;

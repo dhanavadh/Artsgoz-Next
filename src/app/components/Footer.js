@@ -31,9 +31,9 @@ const servlink = [
 ]
 const actlink = [
     { name: 'ข่าวสาร/กิจกรรม', href: '/activity', target: '' },
-    { name: 'บทความ', href: '/topic', target: '' },
+    { name: 'บทความ', href: '/lookup', target: '' },
     { name: 'ชมรม', href: '/club', target: '' },
-    { name: 'Arts Podcast', href: '/activity/podcast', target: '' },
+    { name: 'Arts Podcast', href: '/podcast', target: '' },
 ]
 const supportlink = [
     { name: 'คำถามที่พบบ่อย', href: '/support/faq', target: '' },
@@ -74,7 +74,7 @@ function Footer() {
                     <div
                         class="container flex flex-col flex-wrap px-5 py-24 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap">
                         <div class="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left">
-                            <a class="flex items-center justify-center font-medium text-gray-900 title-font md:justify-start" href='/goz/dev/webkit/ss1'>
+                            <a class="flex items-center justify-center font-medium text-gray-900 title-font md:justify-start" href='/'>
                                 <img src='https://www.arts.chula.ac.th/goz/asset/icons/ab-nav.png'></img>
                             </a>
                             <p class="mt-4 text-md text-gray-500">ห้อง 148 ชั้น M1 อาคารมหาจักรีสิรินธร <br></br> 254 ถนนพญาไท แขวงวังใหม่ <br></br> เขตปทุมวัน กรุงเทพมหานคร 10330</p>
