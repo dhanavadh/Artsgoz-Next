@@ -73,13 +73,14 @@ function Footer() {
                 <footer class="w-full text-gray-700 bg-[#F2F2F2] body-font">
                     <div
                         class="container flex flex-col flex-wrap px-5 py-24 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap">
-                        <div class="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left">
-                            <a class="flex items-center justify-center font-medium text-gray-900 title-font md:justify-start" href='/'>
+                            {/* <div class="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left"></div> */}
+                        <div class="flex flex-wrap flex-grow w-64 mx-auto text-center md:mx-0 md:text-left pb-10">
+                            <a class="flex items-center justify-center w-64 mr-5 font-medium text-gray-900 title-font md:justify-start" href='/'>
                                 <img src='https://www.arts.chula.ac.th/goz/asset/icons/ab-nav.png'></img>
                             </a>
                             <p class="mt-4 text-md text-gray-500">ห้อง 148 ชั้น M1 อาคารมหาจักรีสิรินธร <br></br> 254 ถนนพญาไท แขวงวังใหม่ <br></br> เขตปทุมวัน กรุงเทพมหานคร 10330</p>
-                            <div class="mt-4">
-                                <span class="inline-flex justify-center mt-2 sm:ml-auto sm:mt-0 sm:justify-start">
+                            <div class="flex flex-wrap flex-grow mt-4 text-center md:text-center">
+                                <span class="inline-flex justify-center mt-2 2xl:ml-0 sm:ml-auto sm:mt-0 sm:justify-start">
                                     <a class="text-gray-500 cursor-pointer hover:text-gray-700" href='https://www.facebook.com/artsgozcu/' target='_blank'>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
                                     <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
@@ -184,7 +185,7 @@ function Footer() {
                     </div>
                     <div class="bg-gray-300">
                         <div class="container px-5 py-4 mx-auto">
-                            <p class="text-sm text-gray-700 capitalize xl:text-center">Copyright © 2023 Artsgoz. สงวนสิทธิ์ทุกประการ | พัฒนาโดย Dhanav
+                            <p class="text-sm text-gray-700 capitalize xl:text-center">Copyright © 2023 Artsgoz. สงวนสิทธิ์ทุกประการ
                             </p>
                         </div>
                     </div>
