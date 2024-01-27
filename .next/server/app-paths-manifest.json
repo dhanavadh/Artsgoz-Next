@@ -1,5 +1,6 @@
 {
+  "/not-found": "app/not-found.js",
   "/page": "app/page.js",
-  "/lookup/page": "app/lookup/page.js",
-  "/lookup/180823_1/page": "app/lookup/180823_1/page.js"
+  "/login/page": "app/login/page.js",
+  "/services/staffquery/page": "app/services/staffquery/page.js"
 }

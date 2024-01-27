@@ -30,7 +30,7 @@ import Link from 'next/link';
 const mainMenu = [
     { name: 'หน้าแรก', description: 'คลิกที่นี่เพื่อไปที่หน้าหลัก', href: '/' },
     { name: 'วิชาการ', description: 'ดูบริการวิชาการทั้งหมดได้ที่นี่', href: '/reg' },
-    { name: 'บทความ', description: 'บทความน่าสนใจ อยู่ที่นี่แล้ว', href: '/lookup' },
+    { name: 'ค้นหาชื่ออาจารย์', description: 'ดูชื่อย่ออาจารย์ในคณะฯ ได้ที่นี่', href: '/services/staffquery', target: '', icon: MagnifyingGlassIcon },
 ]
 // { name: 'สวัสดิการ', description: 'สวัสดิการทั้งหมดสำหรับนิสิต', href: '/services' },
 const mainMenu1 = [
@@ -54,6 +54,7 @@ const readings = [
     
     { name: 'สวัสดิการสำหรับนิสิต', description: 'เป็นนิสิตอักษรฯ ได้อะไรบ้าง?', href: '/benefit', target: '', icon: SparklesIcon },
     { name: 'ฝากประชาสัมพันธ์ อบจ.', description: 'สำหรับฝากประชาสัมพันธ์ อบจ.', href: '/cusgform', target: '', icon: SparklesIcon },
+    { name: 'Chula License Portal', description: 'ยืมใช้งานโปรแกรม Adobe, Zoom และอื่น ๆ ได้ที่นี่', href: 'https://licenseportal.it.chula.ac.th', target: '_blank', icon: SparklesIcon },
     
     
   ]
