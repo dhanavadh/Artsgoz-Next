@@ -30,15 +30,6 @@
     
     
   }
-  ::-moz-selection { /* Code for Firefox */
-    color: #F8E1EA;
-    background: #1F1F1F;
-  }
-  
-  ::selection {
-    color: #F8E1EA;
-    background: #1F1F1F;
-  }
 .bg-b {
   background-color: #1F1F1F;
 }

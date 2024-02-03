@@ -18,8 +18,8 @@ const prlink = [
 ]
 const servlink = [
     { name: 'งานทะเบียน', href: '/reg', target: '' },
-    { name: 'สวัสดิการทั้งหมด', href: '/benefit', target: '' },
-    { name: 'ค้นหาชื่ออาจารย์', href: '/services/staffquery', target: '' },
+    { name: 'บริการทั้งหมด', href: '/service', target: '' },
+    { name: 'ค้นหาชื่ออาจารย์', href: '/service/staffquery', target: '' },
     { name: 'คำนวณเกรด', href: '/service/calc', target: '' },
     { name: 'คลังข้อมูลสำหรับนิสิต', href: '/service/asset', target: '' },
     { name: 'ตรวจสอบรายวิชาและอาจารย์ที่ปรึกษา', href: '/service/query/ttb', target: '' },
@@ -46,7 +46,7 @@ const aboutlink = [
     { name: 'ข้อกำหนดการใช้งาน', href: '/support/terms', target: '' },
     { name: 'ArtsLabs', href: '/artslabs', target: '' },
     { name: 'คลังข้อมูล', href: '/about/asset', target: '' },
-    { name: 'โครงสร้างเว็บไซต์', href: '/support/sitemap', target: '' },
+    { name: 'แผนผังเว็บไซต์', href: '/sitemap', target: '' },
 ]
 const weblink = [
     { name: 'GOZ Portal', href: '/login', target: '' },

@@ -1,0 +1,84 @@
+/*!*********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[3]!./src/app/components/MS.css ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************/
+.ssa {
+    position: fixed;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    filter: brightness(0.5);
+    
+    
+  }
+.ssaLU {
+    position: fixed;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    filter: brightness(0.5) grayscale(100%);;
+    
+    
+    
+  }
+.bg-b {
+  background-color: #1F1F1F;
+}
+.ssb {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  filter: grayscale(1) brightness(0.5);
+  
+  
+}
+
+.container{
+  display: flex;
+  
+}
+
+
+.side{
+  flex: 2;
+  height: 100vh;
+  color: white;
+  background-color: black;
+  overflow: scroll;
+  line-height: 300px;
+}
+
+.content{
+  flex: 10;
+  height: 100vh;
+  background-color: pink;
+  overflow: scroll;
+  line-height: 300px;
+}
+
+
+#wrapper {
+  width: 100%;
+  background-color: #fff;
+}
+
+.atb{
+  background: transparent; border: 1px solid #ccc;
+  width: 100%;
+  height: 533;
+}
