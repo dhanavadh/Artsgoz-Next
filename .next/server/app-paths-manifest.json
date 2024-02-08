@@ -1,4 +1,9 @@
 {
+  "/not-found": "app/not-found.js",
   "/page": "app/page.js",
-  "/sitemap/page": "app/sitemap/page.js"
+  "/service/page": "app/service/page.js",
+  "/sitemap/page": "app/sitemap/page.js",
+  "/reg/page": "app/reg/page.js",
+  "/service/staffquery/page": "app/service/staffquery/page.js",
+  "/lookup/180823_1/page": "app/lookup/180823_1/page.js"
 }

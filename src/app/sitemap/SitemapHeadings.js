@@ -26,34 +26,9 @@ const servlink = [
     { name: 'บริการทั้งหมด', href: '/service', target: '' },
     { name: 'ค้นหาชื่ออาจารย์', href: '/service/staffquery', target: '' },
     { name: 'คำนวณเกรด', href: '/service/calc', target: '' },
-    { name: 'คลังข้อมูลสำหรับนิสิต', href: '/service/asset', target: '' },
     { name: 'ตรวจสอบรายวิชาและอาจารย์ที่ปรึกษา', href: '/service/query/ttb', target: '' },
-    { name: 'ตรวจสอบผลการสมัครกิจกรรมต่าง ๆ', href: '/service/query/activity', target: '' },
-    { name: 'ตรวจสอบผลการคัดเลือกเอก', href: '/service/query/major', target: '' },
     { name: 'รีวิวรายวิชา', href: '/review/class', target: '' },
     { name: 'รีวิวเอกในคณะ', href: '/review/major', target: '' },
-]
-const UnivServ = [
-    { name: 'Cisco AnyConnect', href: 'https://www.it.chula.ac.th/service/cunet-vpn-service/', target: '_blank' },
-    { name: 'Office 365', href: 'https://login.microsoftonline.com/?whr=chula.ac.th', target: '_blank' },
-    { name: 'Google Workspace', href: 'https://apps.google.com/user/hub', target: '_blank' },
-    { name: 'Adobe Creative Cloud', href: 'https://creativecloud.adobe.com/apps/all', target: '_blank' },
-    { name: 'อักขราวิสุทธิ์', href: 'http://plag.grad.chula.ac.th/', target: '_blank' },
-    { name: 'คลังปัญญาจุฬา', href: 'https://cuir.car.chula.ac.th/', target: '_blank' },
-    { name: 'Chula EZProxy', href: 'https://login.chula.idm.oclc.org/login', target: '_blank' },
-    { name: 'Chula Student Wellness', href: 'https://chula.wellness.in.th', target: '_blank' },
-    { name: 'CUNET Account Management', href: 'https://userportal.it.chula.ac.th/Login.aspx', target: '_blank' },
-    { name: 'Chula Zoom', href: 'https://chula.zoom.us/', target: '_blank' },
-    { name: 'Chula License Portal System', href: 'https://licenseportal.it.chula.ac.th/', target: '_blank' },    
-    { name: 'สำนักงานวิทยทรัพยาการ', href: 'https://www.car.chula.ac.th/', target: '_blank' },
-    { name: 'Chula Reference Databases', href: 'https://www.car.chula.ac.th/curef.php', target: '_blank' },
-    { name: 'ดาวน์โหลดโปรแกรม EndNote', href: 'https://www.car.chula.ac.th/endnotedownload/index.php', target: '_blank' },
-    { name: 'CUSC Booking', href: 'https://book.cusc.chula.ac.th/', target: '_blank' },
-]
-const UnivPartnerServ = [
-    { name: 'CU Get Reg', href: 'https://cugetreg.com/', target: '' },
-    { name: 'Gen อย่าได้ Ed', href: 'https://www.facebook.com/genedahs/', target: '_blank' },
-    { name: 'CU POP Bus', href: 'https://www.facebook.com/CUPOPBUS', target: '_blank' },    
 ]
 const actlink = [
     { name: 'ข่าวสาร/กิจกรรม', href: '/activity', target: '' },
@@ -154,17 +129,7 @@ const Content2c1808231 = () => {
                                         </li>
                                         
                                     ))}                                    
-                                </nav>                                
-                                <h2 class={hds}>บริการจากมหาวิทยาลัย</h2>
-                                <nav class="mb-5 list-none px-5">
-                                    {UnivServ.map((item) => (
-                                        <li class="mt-3">
-                                            <Link class={unb} href={item.href} target={item.target}>{item.name} </Link>
-                                        </li>
-                                    ))}
-                                </nav>
-                            </div>        
-                            <div class="w-full lg:w-1/2 md:w-1/2">
+                                </nav>     
                                 <h2 class={hds}>กิจกรรม</h2>
                                 <nav class="mb-5 list-none px-5">
                                     {actlink.map((item) => (
@@ -172,7 +137,9 @@ const Content2c1808231 = () => {
                                             <Link class={unb} href={item.href} target={item.target}>{item.name} </Link>
                                         </li>
                                     ))}
-                                </nav>
+                                </nav>                           
+                            </div>        
+                            <div class="w-full lg:w-1/2 md:w-1/2">                                
                                 <h2 class={hds}>ช่วยเหลือ/ร้องเรียน</h2>
                                 <nav class="mb-5 list-none px-5">
                                     {supportlink.map((item) => (
@@ -181,9 +148,6 @@ const Content2c1808231 = () => {
                                         </li>
                                     ))}
                                 </nav>                                
-                                
-                            </div>        
-                            <div class="w-full lg:w-1/2 md:w-1/2">
                                 <h2 class={hds}>เกี่ยวกับเว็บไซต์</h2>
                                 <nav class="mb-5 list-none px-5">
                                     {aboutlink.map((item) => (
@@ -192,6 +156,8 @@ const Content2c1808231 = () => {
                                         </li>
                                     ))}
                                 </nav>
+                            </div>        
+                            <div class="w-full lg:w-1/2 md:w-1/2">                                
                                 <h2 class={hds}>ภายในองค์กร</h2>
                                 <nav class="mb-5 list-none px-5">
                                     {weblink.map((item) => (

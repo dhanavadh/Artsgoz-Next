@@ -32,7 +32,7 @@ const RegHeadings = () => {
                                 <div className='pb-5'>
                                     <div>บทความต่าง ๆ จาก ก.อศ. รวมอยู่ที่นี่แล้ว สามารถเลือกดูได้ตามความสนใจ</div>
                                 </div>
-                                <div className='grid grid-cols-1 gap-4'>
+                                <div className='grid grid-cols-1 gap-4 pb-3'>
                                     <div className="flex flex-col bg-white shadow-lg  md:flex-row">
                                     <Image
                                         className="h-96 w-full object-cover md:h-auto md:w-64"
@@ -55,30 +55,31 @@ const RegHeadings = () => {
                                         </p>
                                     </div>
                                     </div>
-                                    {/* <div className="flex flex-col bg-white shadow-lg  md:flex-row">
+                                </div>
+                                {/* <div className='grid grid-cols-1 gap-4 pb-3'>
+                                    <div className="flex flex-col bg-white shadow-lg  md:flex-row">
                                     <Image
                                         className="h-96 w-full object-cover md:h-auto md:w-64"
-                                        src={IMG1}
+                                        src={LookUp200823}
                                         alt="" />
                                     <div className="flex flex-col justify-start p-6">
                                         <a
-                                        className="mb-5 text-xl font-medium text-neutral-800 -50 underline decoration-pink-500 decoration-4 hover:decoration-blue-500 underline-offset-4 cursor-pointer"
+                                        className="mb-5 text-xl font-medium text-neutral-800 underline decoration-pink-500 decoration-4 hover:decoration-blue-500 underline-offset-4 cursor-pointer"
                                         href='/lookup/180823_1'>
                                         ความสัมพันธ์ “ครู-ศิษย์” :  เมื่อศิษย์เคารพ “ติวเตอร์” กับ “ครู” ไม่เท่ากัน
                                         </a>
-                                        <p className="mb-5 text-base text-neutral-600 -200 text-ellipsis overflow-hidden">
+                                        <p className="mb-5 text-base text-neutral-600 text-ellipsis overflow-hidden">
                                         ในช่วงเดือนเมษายนของทุกปี โรงเรียนกวดวิชาต่างพากันติดป้ายประกาศ ชื่อนักเรียนของตนที่สามารถทำคะแนนสอบเข้ามหาวิทยาลัยสูงติดระดับประเทศ บทสัมภาษณ์ต่าง ๆ ของนักเรียนมักยกย่องความสำเร็จดังกล่าวว่าเป็นผลจากโรงเรียนกวดวิชาหรือ “ติวเตอร์”  โดยมิได้ทันคิดว่า “ครู” ที่โรงเรียนนั้นก็มีส่วนในการสร้างพื้นฐานทางการศึกษาให้กับนักเรียนกลุ่มนั้นเช่นกัน 
                                         </p>
-                                        <p className="text-xs font-bold text-neutral-500 -300">
-                                        บทความจาก
+                                        <p className="text-xs font-bold text-neutral-500">
+                                        บทความจาก ฝ่ายศิลปวัฒนธรรม
                                         </p>
-                                        <p className="text-xs font-bold text-neutral-500 -300">
+                                        <p className="text-xs font-bold text-neutral-500">
                                         โพสต์วันที่ 20 สิงหาคม 2566
                                         </p>
                                     </div>
-                                    </div> */}
-
-                                </div>
+                                    </div>
+                                </div> */}
                                 
                                 
                             </div>

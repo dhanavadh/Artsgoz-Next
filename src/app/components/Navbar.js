@@ -30,11 +30,11 @@ import Link from 'next/link';
 const mainMenu = [
     { name: 'หน้าแรก', description: 'คลิกที่นี่เพื่อไปที่หน้าหลัก', href: '/' },
     { name: 'วิชาการ', description: 'ดูบริการวิชาการทั้งหมดได้ที่นี่', href: '/reg' },
-    { name: 'ค้นหาชื่ออาจารย์', description: 'ดูชื่อย่ออาจารย์ในคณะฯ ได้ที่นี่', href: '/services/staffquery', target: '', icon: MagnifyingGlassIcon },
+    { name: 'ค้นหาชื่ออาจารย์', description: 'ดูชื่อย่ออาจารย์ในคณะฯ ได้ที่นี่', href: '/service/staffquery', target: '', icon: MagnifyingGlassIcon },
 ]
 // { name: 'สวัสดิการ', description: 'สวัสดิการทั้งหมดสำหรับนิสิต', href: '/services' },
 const mainMenu1 = [
-    { name: 'กิจกรรม', description: 'กิจกรรมอยู่นี่เลย', href: '/projects' },
+    { name: 'บริการ', description: 'บริการทั้งหมดสำหรับนิสิตอยู่นี่แล้ว', href: '/service' },
     { name: 'ช่วยเหลือ', description: 'สงสัย/ต้องการข้อมูล มาที่นี่เลย', href: 'support' },
     { name: 'เกี่ยวกับเรา', description: 'ดูข้อมูลเกี่ยวกับ ก.อศ. ได้ที่นี่', href: '/about' },
 ]
@@ -91,12 +91,12 @@ const readings = [
     { name: 'ดูข้อมูลทั้งหมด', href: '/support', icon: ArrowLongRightIcon },
   ]
   const about = [
-    { name: 'คณะกรรมการนิสิตอักษรศาสตร์ (ก.อศ.)', description: 'ดูข้อมูลเกี่ยวกับเราเพิ่มเติม', href: '/about/us', icon: UserGroupIcon },
-    { name: 'ทำเนียบประธานฝ่าย และช่องทางการติดต่อ', description: 'ก.อศ. 66 มีใครบ้าง ดูได้ที่นี่เลย', href: '/about/us', icon: UserGroupIcon },
-    { name: 'โครงการ', description: 'โครงการทั้งหมดจาก ก.อศ. 66', href: '/about/projects', icon: BriefcaseIcon },
-    { name: 'ติดต่อเรา', description: 'ข้อมูลติดต่อกับก.อศ.', href: '/about/connect', icon: QuestionMarkCircleIcon },
-    { name: 'งานประชาสัมพันธ์ ก.อศ.', description: 'ติดตาม/ขอลงงานประชาสัมพันธ์ได้ที่นี่', href: 'https://airtable.com/shrOw4kbtV4ghnpRW', icon: MegaphoneIcon },
-    { name: 'ดาวน์โหลดข้อมูล', description: 'สามารถดาวน์โหลดเอกสาร ฟอร์ม และตราสัญลักษณ์องค์กรได้ที่นี่', href: '/artslabs', icon: CommandLineIcon },
+    { name: 'คณะกรรมการนิสิตอักษรศาสตร์ (ก.อศ.)', description: 'ดูข้อมูลเกี่ยวกับเราเพิ่มเติม', href: '/about/us', icon: UserGroupIcon, target:'' },
+    { name: 'ทำเนียบประธานฝ่าย และช่องทางการติดต่อ', description: 'ก.อศ. 66 มีใครบ้าง ดูได้ที่นี่เลย', href: '/about/us', icon: UserGroupIcon, target:'' },
+    { name: 'โครงการ', description: 'โครงการทั้งหมดจาก ก.อศ. 66', href: '/about/projects', icon: BriefcaseIcon, target:'' },
+    { name: 'ติดต่อเรา', description: 'ข้อมูลติดต่อกับก.อศ.', href: '/about/connect', icon: QuestionMarkCircleIcon, target:'' },
+    { name: 'งานประชาสัมพันธ์ ก.อศ.', description: 'ติดตาม/ขอลงงานประชาสัมพันธ์ได้ที่นี่', href: 'https://airtable.com/shrOw4kbtV4ghnpRW', icon: MegaphoneIcon, target:'_blank' },
+    { name: 'ดาวน์โหลดข้อมูล', description: 'สามารถดาวน์โหลดเอกสาร ฟอร์ม และตราสัญลักษณ์องค์กรได้ที่นี่', href: '/artslabs', icon: CommandLineIcon, target:'' },
   ]
   const aboutAll = [
     { name: 'เข้าสู่ระบบ สำหรับ ก.อศ.', href: '/login', icon: ArrowLongRightIcon },
@@ -437,7 +437,7 @@ function Navbar() {
                                             className={popupP[0]}
                                             >
                                             <div className="flex-auto">
-                                                <a href={item.href} className={popupP[1]}>
+                                                <a href={item.href} className={popupP[1]} target={item.target}>
                                                 {item.name}
                                                 <span className="absolute inset-0" />
                                                 </a>

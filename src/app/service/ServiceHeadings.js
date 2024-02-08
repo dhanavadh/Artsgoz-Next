@@ -24,7 +24,7 @@ function ServiceHeadings() {
             <div className='grid grid-cols-1 mt-48 sm:mt-96'>
                 <div className="grid min-h-min">
                     <div className="col-span-3">
-                      <img src='https://www.arts.chula.ac.th/goz/asset/banner/8dCOiId6lJaxhgVS7UjcEjGy4mpFI4Zg.jpg' className='ssa'></img>                        
+                      <img src='https://www.arts.chula.ac.th/goz/asset/banner/service/305184133_6040343432656018_8376587585280620754_n.jpg' className='ssa'></img>                        
                     </div>
                     <div className="col-span-2">
                         <div class="grid gap-2 mx-10">
