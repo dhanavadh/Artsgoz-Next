@@ -211,13 +211,7 @@ const Content2c1808231 = () => {
                     </div>
                     <div className='grid'>
                         <div className='text-xl pb-3 font-medium'>โครงการพัฒนาเว็บไซต์</div>
-                        <div className=' py-1'>กระทรวงศึกษาธิการ. กรมสามัญศึกษา. (2528). ประเพณีไหว้ครู มาจากไหน? จากคติพราหมณ์ ถึงสมัยกรมพระยาดำรงฯ และแบบพิธีราชการ. <i>ศิลปวัฒนธรรม, 6</i>(7). สืบค้นจาก  https://www.silpa-mag.com/history/article_34088 </div>
-                        <div className=' py-1'>พระเผด็จ ทตฺตชีโว. (2531). <i>ไหว้ครู.</i> กรุงเทพฯ: รวิกานต์.</div>
-                        <div className=' py-1'>เศรษฐมันตร์ กาญจนกุล. (2547). <i>พิธีไหว้ครู.</i> กรุงเทพฯ: เศรษฐศิลป์.</div>
-                        <div className=' py-1'>ส. พลายน้อย. (2554). <i>พืชพรรณไม้มงคล</i> (พิมพ์ครั้งที่ 5). กรุงเทพฯ : พิมพ์คำ</div>
-                        <div className=' py-1'>สุวรรณา เปรมโสตร์. (2551). โรงเรียนกวดวิชา ปัจจัยที่ห้าของครอบครัวยุคใหม่. สืบค้นจาก https://www.sarakadee.com/2008/11/01/tutor/ </div>
-                        <div className=' py-1'>ThaiPublica. (2556). “กวดวิชา” มาตรฐานการศึกษาไทย เรียน “เพื่อสอบ” หรือเรียน “เพื่อรู้”. สืบค้นจาก https://thaipublica.org/2013/03/tutorial-critical-study-of-thailand/</div>
-                        <div className=' py-1'>Thanyawat Ippoodom. (2561). ยิ่งแข่งขัน ยิ่งหลงทาง : กับดักการศึกษาไทยในมุมของ อ.อรรถพล อนันตวรสกุล. สืบค้นจาก https://thematter.co/social/education-trap-interview/46925</div>
+                        <div className=' py-1'>โครงการพัฒนาเว็บไซต์คณะกรรมการนิสิตอักษรศาสตร์กำลังอยู่ในช่วงพัฒนา หากนิสิตคณะอักษรฯ สนใจศึกษาข้อมูลเพิ่มเติม สามารถติดต่อได้ที่ it.artsgoz@gmail.com</div>
                     </div>
                 </div>
                 <div className='grid col-span-1 lg:col-span-2'>
