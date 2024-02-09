@@ -798,12 +798,6 @@ video {
 .h-screen {
   height: 100vh;
 }
-.h-64 {
-  height: 16rem;
-}
-.h-32 {
-  height: 8rem;
-}
 .min-h-fit {
   min-height: -moz-fit-content;
   min-height: fit-content;
@@ -916,14 +910,14 @@ video {
 .grid-cols-12 {
   grid-template-columns: repeat(12, minmax(0, 1fr));
 }
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 .grid-cols-6 {
   grid-template-columns: repeat(6, minmax(0, 1fr));
-}
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 .grid-rows-1 {
   grid-template-rows: repeat(1, minmax(0, 1fr));
@@ -1178,10 +1172,6 @@ video {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
 .pb-1 {
   padding-bottom: 0.25rem;
 }
@@ -1197,6 +1187,9 @@ video {
 .pb-5 {
   padding-bottom: 1.25rem;
 }
+.pl-3 {
+  padding-left: 0.75rem;
+}
 .pr-1 {
   padding-right: 0.25rem;
 }
@@ -1211,9 +1204,6 @@ video {
 }
 .pt-5 {
   padding-top: 1.25rem;
-}
-.pl-3 {
-  padding-left: 0.75rem;
 }
 .text-left {
   text-align: left;
@@ -1365,6 +1355,10 @@ video {
   --tw-text-opacity: 1;
   color: rgb(38 38 38 / var(--tw-text-opacity));
 }
+.text-pink-500 {
+  --tw-text-opacity: 1;
+  color: rgb(236 72 153 / var(--tw-text-opacity));
+}
 .text-slate-700 {
   --tw-text-opacity: 1;
   color: rgb(51 65 85 / var(--tw-text-opacity));
@@ -1372,10 +1366,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-.text-pink-500 {
-  --tw-text-opacity: 1;
-  color: rgb(236 72 153 / var(--tw-text-opacity));
 }
 .underline {
   text-decoration-line: underline;
@@ -1598,10 +1588,6 @@ video {
     margin-top: 24rem;
   }
 
-  .sm\:w-64 {
-    width: 16rem;
-  }
-
   .sm\:flex-row {
     flex-direction: row;
   }
@@ -1642,24 +1628,12 @@ video {
     height: auto;
   }
 
-  .md\:h-64 {
-    height: 16rem;
-  }
-
   .md\:w-1\/2 {
     width: 50%;
   }
 
   .md\:w-64 {
     width: 16rem;
-  }
-
-  .md\:w-32 {
-    width: 8rem;
-  }
-
-  .md\:w-auto {
-    width: auto;
   }
 
   .md\:flex-row {

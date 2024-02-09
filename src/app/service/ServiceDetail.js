@@ -13,6 +13,7 @@ import KusBanner from '../components/asset/380485964_728358889328949_41252134188
 import GozLocation from '../components/asset/GOZLocation.jpg'
 
 const BannerIn = [
+    { name: 'ค้นหารายชื่ออาจารย์', description: `เคยสงสัยไหมว่าชื่อย่ออาจารย์ที่สอนคือใคร นิสิตสามารถค้นหาชื่อย่ออาจารย์ในคณะอักษรศาสตร์ได้แล้ววันนี้`, href: '/service/staffquery', target: '', image: 'https://www.arts.chula.ac.th/goz/asset/banner/service/staffquery-banner.png' },    
     { name: 'บริการยืมร่ม', description: `ในวันที่ฝนตกแต่ลืมร่ม ให้ ก.อศ. ได้ดูแลคุณด้วย "บริการยืมร่ม" รายละเอียดเพิ่มเติมสามารถอ่านได้ผ่านฟอร์มต่าง ๆ ใน https://linktr.ee/artsgoz 
     บนหน้าไบโอแถบ "รวมฟอร์มสำหรับเพื่อนนิสิต" ได้เลย`, href: 'https://linktr.ee/artsgoz', target: '_blank', image: 'https://www.arts.chula.ac.th/goz/asset/banner/service/379976066_728358882662283_6502025623869856416_n.jpg' },    
     { name: 'บริการผ้าอนามัยฟรี', description: `ในวันนั้นของเดือน ให้ ก.อศ. ได้ดูแลคุณด้วย "บริการผ้าอนามัยฟรี"
